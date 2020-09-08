@@ -49,7 +49,7 @@ discordClient.on('message', async msg => {
       const [starport, size, atmosphere, hydrosphere, population, goverment, law, tech] = uwp;
 
       // get the starport details
-      const sp = `\n|**Quality**|${starports[starport].quality}|\n|**Berthing Costs**|${starports[starport].berthingCost}|\n|**Fuel Available**|${starports[starport].fuelAvailable}|`;
+      const sp = `\n\t**Quality**: ${starports[starport].quality}\n\t**Berthing Costs**: ${starports[starport].berthingCost}\n\t**Fuel Available**: ${starports[starport].fuelAvailable}`;
       let response = `Starport ${starport}: ${sp}\n`;
       response += `Size: ${size} \n`;
       response += `Atmosphere ${atmosphere}: ${atmospheres[atmosphere].composition} ${atmospheres[atmosphere].gearRequired} \n`;
