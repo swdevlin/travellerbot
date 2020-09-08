@@ -27,7 +27,7 @@ const lawLevels = JSON.parse(fs.readFileSync('data/law_level.json', 'utf8'));
 const techLevels = JSON.parse(fs.readFileSync('data/tech_level.json', 'utf8'));
 
 const codeIsValid = (code) => {
-  return (code.length === 1 && '0123456789ABCDEF'.includes(code));
+  return (code.length === 1 && '0123456789ABCDEFX'.includes(code));
 }
 
 function formatNumber(num) {
