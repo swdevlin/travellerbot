@@ -1,20 +1,68 @@
 {
     "items": [
-        {"value":"0","description":"None"},
-        {"value":"1","description":"Company/Corporation"},
-        {"value":"2","description":"Participating Democracy"},
-        {"value":"3","description":"Self-Perpetuating Oligarchy"},
-        {"value":"4","description":"Representative Democracy"},
-        {"value":"5","description":"Feudal Technocracy"},
-        {"value":"6","description":"Captive Governemnt"},
-        {"value":"7","description":"Balkinisation"},
-        {"value":"8","description":"Civil Service Bureaucracy"},
-        {"value":"9","description":"Impersonal Bureaucracy"},
-        {"value":"A","description":"Charismatic Dictator"},
-        {"value":"B","description":"Non-Charismatic Leadeer"},
-        {"value":"C","description":"Charismatic Oligrachy"},
-        {"value":"D","description":"Religious Distaorsahip"},
-        {"value":"E","description":"Religious Autocracy"},
-        {"value":"F","description":"Totalitarian Oligarchy"}
+        {
+            "value": "0",
+            "description": "None"
+        },
+        {
+            "value": "1",
+            "description": "Company/Corporation"
+        },
+        {
+            "value": "2",
+            "description": "Participating Democracy"
+        },
+        {
+            "value": "3",
+            "description": "Self-Perpetuating Oligarchy"
+        },
+        {
+            "value": "4",
+            "description": "Representative Democracy"
+        },
+        {
+            "value": "5",
+            "description": "Feudal Technocracy"
+        },
+        {
+            "value": "6",
+            "description": "Captive Governemnt"
+        },
+        {
+            "value": "7",
+            "description": "Balkinisation"
+        },
+        {
+            "value": "8",
+            "description": "Civil Service Bureaucracy"
+        },
+        {
+            "value": "9",
+            "description": "Impersonal Bureaucracy"
+        },
+        {
+            "value": "A",
+            "description": "Charismatic Dictator"
+        },
+        {
+            "value": "B",
+            "description": "Non-Charismatic Leadeer"
+        },
+        {
+            "value": "C",
+            "description": "Charismatic Oligrachy"
+        },
+        {
+            "value": "D",
+            "description": "Religious Distaorsahip"
+        },
+        {
+            "value": "E",
+            "description": "Religious Autocracy"
+        },
+        {
+            "value": "F",
+            "description": "Totalitarian Oligarchy"
+        }
     ]
 }

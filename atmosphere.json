@@ -1,20 +1,84 @@
 {
     "items": [
-        {"value":"0","composition":"None","gear_required":"Vacc Suit"},
-        {"value":"1","composition":"Trace","gear_required":"Vacc Suit"},
-        {"value":"2","composition":"Very Thin, Tainted","gear_required":"Respirator & Filter"},
-        {"value":"3","composition":"Very Thin","gear_required":"Respirator"},
-        {"value":"4","composition":"Thin, Tainted","gear_required":"Filter"},
-        {"value":"5","composition":"Thin","gear_required":"None"},
-        {"value":"6","composition":"Standard","gear_required":"None"},
-        {"value":"7","composition":"Standard, Tainted","gear_required":"Filter"},
-        {"value":"8","composition":"Dense","gear_required":"None"},
-        {"value":"9","composition":"Dense, Tainted","gear_required":"Filter"},
-        {"value":"A","composition":"Exotic","gear_required":"Air Supply"},
-        {"value":"B","composition":"Corrosive","gear_required":"Vacc Suit"},
-        {"value":"C","composition":"Insidious","gear_required":"Vacc Suit"},
-        {"value":"D","composition":"Very Dense","gear_required":"None"},
-        {"value":"E","composition":"Low","gear_required":"None"},
-        {"value":"F","composition":"Unusual","gear_required":"Varies"}
+        {
+            "value": "0",
+            "composition": "None",
+            "gear_required": "Vacc Suit"
+        },
+        {
+            "value": "1",
+            "composition": "Trace",
+            "gear_required": "Vacc Suit"
+        },
+        {
+            "value": "2",
+            "composition": "Very Thin, Tainted",
+            "gear_required": "Respirator & Filter"
+        },
+        {
+            "value": "3",
+            "composition": "Very Thin",
+            "gear_required": "Respirator"
+        },
+        {
+            "value": "4",
+            "composition": "Thin, Tainted",
+            "gear_required": "Filter"
+        },
+        {
+            "value": "5",
+            "composition": "Thin",
+            "gear_required": "None"
+        },
+        {
+            "value": "6",
+            "composition": "Standard",
+            "gear_required": "None"
+        },
+        {
+            "value": "7",
+            "composition": "Standard, Tainted",
+            "gear_required": "Filter"
+        },
+        {
+            "value": "8",
+            "composition": "Dense",
+            "gear_required": "None"
+        },
+        {
+            "value": "9",
+            "composition": "Dense, Tainted",
+            "gear_required": "Filter"
+        },
+        {
+            "value": "A",
+            "composition": "Exotic",
+            "gear_required": "Air Supply"
+        },
+        {
+            "value": "B",
+            "composition": "Corrosive",
+            "gear_required": "Vacc Suit"
+        },
+        {
+            "value": "C",
+            "composition": "Insidious",
+            "gear_required": "Vacc Suit"
+        },
+        {
+            "value": "D",
+            "composition": "Very Dense",
+            "gear_required": "None"
+        },
+        {
+            "value": "E",
+            "composition": "Low",
+            "gear_required": "None"
+        },
+        {
+            "value": "F",
+            "composition": "Unusual",
+            "gear_required": "Varies"
+        }
     ]
 }
