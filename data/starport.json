@@ -1,0 +1,32 @@
+{
+    "A": {
+        "quality": "Excellent",
+        "berthingCost": "1DxCR1000",
+        "fuelAvailable": "Refined"
+    },
+    "B": {
+        "quality": "Good",
+        "berthingCost": "1DxCR500",
+        "fuelAvailable": "Refined"
+    },
+    "C": {
+        "quality": "Routine",
+        "berthingCost": "1DxCR100",
+        "fuelAvailable": "Unrefined"
+    },
+    "D": {
+        "quality": "Poor",
+        "berthingCost": "1DxCR10",
+        "fuelAvailable": "Unrefined"
+    },
+    "E": {
+        "quality": "Frontier",
+        "berthingCost": "0",
+        "fuelAvailable": "None"
+    },
+    "X": {
+        "quality": "None",
+        "berthingCost": "0",
+        "fuelAvailable": "None"
+    }
+}

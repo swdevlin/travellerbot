@@ -1,4 +1,5 @@
 require('dotenv').config();
+const fs = require('fs');
 
 const Discord = require('discord.js');
 const discordClient = new Discord.Client();
@@ -10,6 +11,12 @@ discordClient.on('ready', () => {
 });
 
 const UWPRegex = /(.)(.)(.)(.)(.)(.)(.)\-(.)/;
+
+const starport = JSON.parse(fs.readFileSync('data/starport.json', 'utf8'));
+
+const government = JSON.parse(fs.readFileSync('data/government.json', 'utf8'));
+
+const atmosphere = JSON.parse(fs.readFileSync('data/atmosphere.json', 'utf8'));
 
 const codeIsValid = (code) => {
   return (code.length === 1 && '0123456789ABCDEF'.includes(code));
@@ -23,8 +30,6 @@ discordClient.on('message', async msg => {
   if (!msg.content.startsWith(prefix))
     return;
 
-  const fs = require('fs');
-  const starport = JSON.parse(fs.readFileSync('starport.json', 'utf8'));
 
   const message = msg.content.substring(2).trim().toUpperCase();
   const {id: author_id} = msg.author;
@@ -39,18 +44,13 @@ discordClient.on('message', async msg => {
           msg.reply(`${msg.content} is an invalid UWP`);
   
       // get the starport details
-      let sp = "";
-      for (i in starport.items) {
-          if(startport.items[i].value == uwp[0])
-            sp = `${startport.items[i].quality} Berthing Costs:${startport.items[i].berthing_cost} Fueld Avaialble:${startport.items[i].fuel_available}`;
-        }
-
-      let response = `Starport: ${uwp[0]} ${sp}\n`;
+      const sp = `${starport[uwp[0]].quality} Berthing Costs: ${starport[uwp[0]].berthingCost} Fuel Available: ${starport[uwp[0]].fuelAvailable}`;
+      let response = `Starport ${uwp[0]}: ${sp}\n`;
       response += `Size: ${uwp[1]} \n`;
-      response += `Atmosphere: ${uwp[2]} \n`;
+      response += `Atmosphere ${uwp[2]}: ${atmosphere[uwp[2]].composition} ${atmosphere[uwp[2]].gearRequired} \n`;
       response += `Hydrosphere: ${uwp[3]} \n`;
       response += `Population: ${uwp[4]} \n`;
-      response += `Government: ${uwp[5]} \n`;
+      response += `Government ${uwp[5]}: ${government[uwp[5]]} \n`;
       response += `Law: ${uwp[6]} \n`;
       response += `Tech: ${uwp[7]} \n`;
       console.log(response);

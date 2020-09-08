@@ -1,0 +1,18 @@
+{
+    "0": {"composition":"None","gearRequired":"Vacc Suit"},
+    "1": {"composition":"Trace","gearRequired":"Vacc Suit"},
+    "2": {"composition":"Very Thin, Tainted","gearRequired":"Respirator & Filter"},
+    "3": {"composition":"Very Thin","gearRequired":"Respirator"},
+    "4": {"composition":"Thin, Tainted","gearRequired":"Filter"},
+    "5": {"composition":"Thin","gearRequired":"None"},
+    "6": {"composition":"Standard","gearRequired":"None"},
+    "7": {"composition":"Standard, Tainted","gearRequired":"Filter"},
+    "8": {"composition":"Dense","gearRequired":"None"},
+    "9": {"composition":"Dense, Tainted","gearRequired":"Filter"},
+    "A": {"composition":"Exotic","gearRequired":"Air Supply"},
+    "B": {"composition":"Corrosive","gearRequired":"Vacc Suit"},
+    "C": {"composition":"Insidious","gearRequired":"Vacc Suit"},
+    "D": {"composition":"Very Dense","gearRequired":"None"},
+    "E": {"composition":"Low","gearRequired":"None"},
+    "F": {"composition":"Unusual","gearRequired":"Varies"}
+}
