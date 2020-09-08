@@ -1,20 +1,15 @@
 {
     "items": [
-        {
-            "value": 0,
-            "diameter": "Less than 1,000km",
-            "gravity": "Negligible"
-        },
-        {
-            "value": 1,
-            "diameter": "1,600km",
-            "gravity": 0.05
-        },
-        {
-            "value": 2,
-            "diameter": "3,200km",
-            "gravity": "0.15"
-        }
-       
+        {"value":"0","diameter":"Less than 1,000km","gravity":"Negligable"},
+        {"value":"1","diameter":"1,600km","gravity":"0.05"},
+        {"value":"2","diameter":"3,200km","gravity":"0.15"},
+        {"value":"3","diameter":"4,800km","gravity":"0.25"},
+        {"value":"4","diameter":"6,400km","gravity":"0.35"},
+        {"value":"5","diameter":"8,000km","gravity":"0.45"},
+        {"value":"6","diameter":"9,600km","gravity":"0.7"},
+        {"value":"7","diameter":"11,200km","gravity":"0.9"},
+        {"value":"8","diameter":"12,800km","gravity":"1"},
+        {"value":"9","diameter":"14,400km","gravity":"1.25"},
+        {"value":"A","diameter":"16,000km","gravity":"1.4"}
     ]
 }

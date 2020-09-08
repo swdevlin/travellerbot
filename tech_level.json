@@ -1,0 +1,20 @@
+{
+    "items": [
+        {"value":"0","level":"0"},
+        {"value":"1","level":"1"},
+        {"value":"2","level":"2"},
+        {"value":"3","level":"3"},
+        {"value":"4","level":"4"},
+        {"value":"5","level":"5"},
+        {"value":"6","level":"6"},
+        {"value":"7","level":"7"},
+        {"value":"8","level":"8"},
+        {"value":"9","level":"9"},
+        {"value":"A","level":"10"},
+        {"value":"B","level":"11"},
+        {"value":"C","level":"12"},
+        {"value":"D","level":"13"},
+        {"value":"E","level":"14"},
+        {"value":"F","level":"15"}
+    ]
+}
