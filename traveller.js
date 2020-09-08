@@ -30,6 +30,10 @@ const codeIsValid = (code) => {
   return (code.length === 1 && '0123456789ABCDEF'.includes(code));
 }
 
+function formatNumber(num) {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+}
+
 discordClient.on('message', async msg => {
   // ignore our own messages
   if (`${msg.author.username}#${msg.author.discriminator}` === discordClient.user.tag)
@@ -64,7 +68,7 @@ discordClient.on('message', async msg => {
       const hyddetail = `\t${hydrospheres[hydrosphere].description}`;
       let popdetail = `\t`;
       // TODO format this with commas, no decimal
-      popdetail += 10**Number(population);
+      popdetail += formatNumber(10**Number(population));
       const govdetail = `\t${governments[goverment]}`;
       const lawdetail = `\t*Bans*:\n\t\t${lawLevels[law].weaponsBanned};\n\t\t${lawLevels[law].armourBanned}`;
       const techdetail = `\tTL ${techLevels[tech].level}\n\t${techLevels[tech].shortDescription}`;
