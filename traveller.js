@@ -48,7 +48,8 @@ discordClient.on('message', async msg => {
   const {guild} = msg.channel;
   const {id: guild_id} = guild;
   try {
-    if (message.substring(0,5) == "TRADE") {
+    messageCommand = message.substring(2,7);
+    if (messageCommand == "TRADE") {
       let response = `The Trade Code function is not yet operational`;
       await msg.reply(response);
     }else{
