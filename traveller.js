@@ -14,7 +14,7 @@ const UWPRegex = /(.)(.)(.)(.)(.)(.)(.)\-(.)/;
 
 const starports = JSON.parse(fs.readFileSync('data/starport.json', 'utf8'));
 
-const planetSize = JSON.parse(fs.readFileSync('data/planet_size.json', 'utf8'));
+const planetSizes = JSON.parse(fs.readFileSync('data/planet_size.json', 'utf8'));
 
 const governments = JSON.parse(fs.readFileSync('data/government.json', 'utf8'));
 
@@ -54,7 +54,7 @@ discordClient.on('message', async msg => {
 
       // define extra details for each item
       const spdetail = `\tThis port is ${starports[starport].quality}\n\tBerthing costs are ${starports[starport].berthingCost} per day\n\tThis port has ${starports[starport].fuelAvailable} fuel`;
-      const sizdetail = `\t${planetSize[size].diameter} in diameter\n\tGravity is ${planetSize[size].gravity}G`;
+      const sizeDetail = `\t${planetSizes[size].diameter} in diameter\n\tGravity is ${planetSizes[size].gravity}G`;
       let atdetail = `\t${atmospheres[atmosphere].composition} atmosphere\n\t`;
       if(atmospheres[atmosphere].gearRequired == "None") {
         atdetail += `No special gear is required`;
@@ -72,7 +72,7 @@ discordClient.on('message', async msg => {
       // define response to start with cr to drop off line with name
       let response = `\n`;
       response += `**Starport (${starport})**\n${spdetail}\n`;
-      response += `**Size (${size})**\n${sizdetail}\n`;
+      response += `**Size (${size})**\n${sizeDetail}\n`;
       response += `**Atmosphere (${atmosphere})**\n${atdetail} \n`;
       response += `**Hydrosphere (${hydrosphere})**\n${hyddetail}\n`;
       response += `**Population: (${population})**\n${popdetail}\n`;
