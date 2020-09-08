@@ -1,15 +1,48 @@
 {
     "items": [
-        {"value":"0","description":"Desert World"},
-        {"value":"1","description":"Dry World"},
-        {"value":"2","description":"A few small seas"},
-        {"value":"3","description":"Small seas and Oceans"},
-        {"value":"4","description":"Wet World"},
-        {"value":"5","description":"Large Oceans"},
-        {"value":"6","description":"Large Oceans"},
-        {"value":"7","description":"Large Oceans"},
-        {"value":"8","description":"Water World"},
-        {"value":"9","description":"Only a few small islands"},
-        {"value":"A","description":"Entirely Water"}
+        {
+            "value": "0",
+            "description": "Desert World"
+        },
+        {
+            "value": "1",
+            "description": "Dry World"
+        },
+        {
+            "value": "2",
+            "description": "A few small seas"
+        },
+        {
+            "value": "3",
+            "description": "Small seas and Oceans"
+        },
+        {
+            "value": "4",
+            "description": "Wet World"
+        },
+        {
+            "value": "5",
+            "description": "Large Oceans"
+        },
+        {
+            "value": "6",
+            "description": "Large Oceans"
+        },
+        {
+            "value": "7",
+            "description": "Large Oceans"
+        },
+        {
+            "value": "8",
+            "description": "Water World"
+        },
+        {
+            "value": "9",
+            "description": "Only a few small islands"
+        },
+        {
+            "value": "A",
+            "description": "Entirely Water"
+        }
     ]
 }

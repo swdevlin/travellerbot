@@ -1,0 +1,845 @@
+{
+    "purchase": [
+        {
+            "Ag": {
+                "description": "Agricultural",
+                "goods": [
+                    {
+                        "goods_name": "Common Raw Materials",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Biochemicals",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Live Animals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Luxury Consumables",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Textiles",
+                        "DM": "+7"
+                    },
+                    {
+                        "goods_name": "Uncommon Raw Materials",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Wood",
+                        "DM": "+6"
+                    },
+                    {
+                        "goods_name": "Luxuries (Illegal)",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "As": {
+                "description": "Asteroid",
+                "goods": [
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+4"
+                    },
+                    {
+                        "goods_name": "Common Ore",
+                        "DM": "+4"
+                    },
+                    {
+                        "goods_name": "Crystals & Gems",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Pharmacueticals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Precious Metals",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Radioactives",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Uncommon Ore",
+                        "DM": "+4"
+                    },
+                    {
+                        "goods_name": "Drugs (Illegal)",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Ba": {
+                "description": "Barren",
+                "goods": []
+            }
+        },
+        {
+            "De": {
+                "description": "Desert",
+                "goods": [
+                    {
+                        "goods_name": "Crystals & Gems",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Petrochemicals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Precious Metals",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Spices",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Drugs (Illegal)",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Fl": {
+                "description": "Fluid Oceans",
+                "goods": []
+            }
+        },
+        {
+            "Ga": {
+                "description": "Garden",
+                "goods": [
+                    {
+                        "goods_name": "Common Raw Materials",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Drugs (Illegal)",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Hi": {
+                "description": "High Population",
+                "goods": [
+                    {
+                        "goods_name": "Luxury Goods",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Pharmacueticals",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Ht": {
+                "description": "High Tech",
+                "goods": [
+                    {
+                        "goods_name": "Common Electronics",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Advanced Electronics",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Advanced Machine Parts",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Advanced Weapons",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Advanced Vehicles",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Cybernetics",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Medical Supplies",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Vehicles",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Cybernetics (Illegal)",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Weapon (Illegal)",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "Ic": {
+                "description": "Ice Capped",
+                "goods": [
+                    {
+                        "goods_name": "Crystals & Gems",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Precious Metals",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "In": {
+                "description": "Industrial",
+                "goods": [
+                    {
+                        "goods_name": "Common Electronics",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Common Industrial Goods",
+                        "DM": "+5"
+                    },
+                    {
+                        "goods_name": "Common Manufactured Goods",
+                        "DM": "+5"
+                    },
+                    {
+                        "goods_name": "Advanced Electronics",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Advanced Machine Parts",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Advanced Manufactured Goods",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Polymers",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Robots",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Vehicles",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "Lo": {
+                "description": "Low Population",
+                "goods": [
+                    {
+                        "goods_name": "Radioactives",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "Lt": {
+                "description": "Low Tech",
+                "goods": []
+            }
+        },
+        {
+            "Na": {
+                "description": "Non-Agricultural",
+                "goods": [
+                    {
+                        "goods_name": "Common Industrial Goods",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Common Manufactured Goods",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "Ni": {
+                "description": "Non Industrial",
+                "goods": []
+            }
+        },
+        {
+            "Po": {
+                "description": "Poor",
+                "goods": []
+            }
+        },
+        {
+            "Ri": {
+                "description": "Rich",
+                "goods": [
+                    {
+                        "goods_name": "Common Electronics",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Va": {
+                "description": "Vaccuum",
+                "goods": []
+            }
+        },
+        {
+            "Wa": {
+                "description": "Water World",
+                "goods": [
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Biochemicals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Luxury Consumables",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Uncommon Raw Materials",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Biochemicals (Illegal)",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Drugs (Illegal)",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Luxuries (Illegal)",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Az": {
+                "description": "Amber Zone",
+                "goods": []
+            }
+        },
+        {
+            "Rz": {
+                "description": "Red Zone",
+                "goods": []
+            }
+        }
+    ],
+    "sell": [
+        {
+            "Ag": {
+                "description": "Agricultural",
+                "goods": [
+                    {
+                        "goods_name": "Common Industrial Goods",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Petrochemicals",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Radioactives",
+                        "DM": "-3"
+                    },
+                    {
+                        "goods_name": "Robots",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "As": {
+                "description": "Asteroid",
+                "goods": [
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Advanced Electronics",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Advanced Machine Parts",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Advanced Vehicles",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Cybernetics",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Cybernetics (Illegal)",
+                        "DM": "+4"
+                    }
+                ]
+            }
+        },
+        {
+            "Ba": {
+                "description": "Barren",
+                "goods": []
+            }
+        },
+        {
+            "De": {
+                "description": "Desert",
+                "goods": []
+            }
+        },
+        {
+            "Fl": {
+                "description": "Fluid Oceans",
+                "goods": [
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Ga": {
+                "description": "Garden",
+                "goods": []
+            }
+        },
+        {
+            "Hi": {
+                "description": "High Population",
+                "goods": [
+                    {
+                        "goods_name": "Common Manufactured Goods",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Advanced Manufactured Goods",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Luxury Consumables",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Spices",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Textiles",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Vehicles",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Drugs (Illegal)",
+                        "DM": "+6"
+                    },
+                    {
+                        "goods_name": "Luxuries (Illegal)",
+                        "DM": "+4"
+                    }
+                ]
+            }
+        },
+        {
+            "Ht": {
+                "description": "High Tech",
+                "goods": [
+                    {
+                        "goods_name": "Precious Metals",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Radioactives",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Robots",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Uncommon Raw Materials",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Ic": {
+                "description": "Ice Capped",
+                "goods": [
+                    {
+                        "goods_name": "Common Consumables",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Cybernetics",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Cybernetics (Illegal)",
+                        "DM": "+4"
+                    }
+                ]
+            }
+        },
+        {
+            "In": {
+                "description": "Industrial",
+                "goods": [
+                    {
+                        "goods_name": "Radioactives",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Common Raw Materials",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Common Ore",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Biochemicals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Crystals & Gems",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Medical Supplies",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Petrochemicals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Precious Metals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Uncommon Ore",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Uncommon Raw Materials",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Wood",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Biochemicals (Illegal)",
+                        "DM": "+6"
+                    }
+                ]
+            }
+        },
+        {
+            "Lo": {
+                "description": "Low Population",
+                "goods": [
+                    {
+                        "goods_name": "Common Electronics",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Live Animals",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Petrochemicals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Pharmacueticals",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Lt": {
+                "description": "Low Tech",
+                "goods": [
+                    {
+                        "goods_name": "Petrochemicals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Pharmacueticals",
+                        "DM": "+1"
+                    }
+                ]
+            }
+        },
+        {
+            "Na": {
+                "description": "Non-Agricultural",
+                "goods": [
+                    {
+                        "goods_name": "Textiles",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "Ni": {
+                "description": "Non Industrial",
+                "goods": [
+                    {
+                        "goods_name": "Common Electronics",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Common Industrial Goods",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Common Manufactured Goods",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Common Ore",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Advanced Electronics",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Advanced Machine Parts",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Polymers",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Radioactives",
+                        "DM": "-2"
+                    },
+                    {
+                        "goods_name": "Uncommon Ore",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Vehicles",
+                        "DM": "+2"
+                    }
+                ]
+            }
+        },
+        {
+            "Po": {
+                "description": "Poor",
+                "goods": [
+                    {
+                        "goods_name": "Common Electronics",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Common Raw Materials",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Advanced Weapons",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Medical Supplies",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Spices",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Weapon (Illegal)",
+                        "DM": "+6"
+                    }
+                ]
+            }
+        },
+        {
+            "Ri": {
+                "description": "Rich",
+                "goods": [
+                    {
+                        "goods_name": "Advanced Electronics",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Advanced Manufactured Goods",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Advanced Vehicles",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Crystals & Gems",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Cybernetics",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Luxury Consumables",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Luxury Goods",
+                        "DM": "+4"
+                    },
+                    {
+                        "goods_name": "Medical Supplies",
+                        "DM": "+1"
+                    },
+                    {
+                        "goods_name": "Pharmacueticals",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Polymers",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Precious Metals",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Spices",
+                        "DM": "+3"
+                    },
+                    {
+                        "goods_name": "Wood",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Cybernetics (Illegal)",
+                        "DM": "+8"
+                    },
+                    {
+                        "goods_name": "Drugs (Illegal)",
+                        "DM": "+6"
+                    },
+                    {
+                        "goods_name": "Luxuries (Illegal)",
+                        "DM": "+6"
+                    }
+                ]
+            }
+        },
+        {
+            "Va": {
+                "description": "Vaccuum",
+                "goods": []
+            }
+        },
+        {
+            "Wa": {
+                "description": "Water World",
+                "goods": []
+            }
+        },
+        {
+            "Az": {
+                "description": "Amber Zone",
+                "goods": [
+                    {
+                        "goods_name": "Advanced Weapons",
+                        "DM": "+2"
+                    },
+                    {
+                        "goods_name": "Cybernetics (Illegal)",
+                        "DM": "+6"
+                    },
+                    {
+                        "goods_name": "Weapon (Illegal)",
+                        "DM": "+8"
+                    }
+                ]
+            }
+        },
+        {
+            "Rz": {
+                "description": "Red Zone",
+                "goods": [
+                    {
+                        "goods_name": "Advanced Weapons",
+                        "DM": "+4"
+                    },
+                    {
+                        "goods_name": "Cybernetics (Illegal)",
+                        "DM": "+6"
+                    },
+                    {
+                        "goods_name": "Weapon (Illegal)",
+                        "DM": "+10"
+                    }
+                ]
+            }
+        }
+    ]
+}
