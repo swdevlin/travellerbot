@@ -26,6 +26,8 @@ const lawLevels = JSON.parse(fs.readFileSync('data/law_level.json', 'utf8'));
 
 const techLevels = JSON.parse(fs.readFileSync('data/tech_level.json', 'utf8'));
 
+const tradeCodes = JSON.parse(fs.readFileSync('trade_codes.json', 'utf8'));
+
 const codeIsValid = (code) => {
   return (code.length === 1 && '0123456789ABCDEFX'.includes(code));
 }
@@ -43,14 +45,19 @@ discordClient.on('message', async msg => {
     return;
 
 
-  const message = msg.content.substring(2).trim().toUpperCase();
+  const message = msg.content.substring(prefix.length).trim().toUpperCase();
   const {id: author_id} = msg.author;
   const {guild} = msg.channel;
   const {id: guild_id} = guild;
   try {
-    messageCommand = message.substring(2,7);
-    if (messageCommand == "TRADE") {
-      let response = `The Trade Code function is not yet operational`;
+    if (message.startsWith("TRADE")) {
+      tradeCodeList = message.slice(6).split(" ");
+      let response = `\n`;
+      response += `Codes are ${tradeCodeList}\n`;
+      for (index = 0; index < tradeCodeList.length; ++index) {
+        response += `\t${tradeCodeList[index]}: ${tradeCodes["purchase"][tradeCodeList[index]].description}\n`;
+      }
+      response += `The Trade Code function is not yet operational`;
       await msg.reply(response);
     }else{
       let uwp = UWPRegex.exec(message);
