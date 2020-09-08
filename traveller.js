@@ -14,6 +14,8 @@ const UWPRegex = /(.)(.)(.)(.)(.)(.)(.)\-(.)/;
 
 const starports = JSON.parse(fs.readFileSync('data/starport.json', 'utf8'));
 
+const planetSize = JSON.parse(fs.readFileSync('data/planet_size.json', 'utf8'));
+
 const governments = JSON.parse(fs.readFileSync('data/government.json', 'utf8'));
 
 const atmospheres = JSON.parse(fs.readFileSync('data/atmosphere.json', 'utf8'));
@@ -52,7 +54,7 @@ discordClient.on('message', async msg => {
 
       // define extra details for each item
       const spdetail = `\tThis port is ${starports[starport].quality}\n\tBerthing costs are ${starports[starport].berthingCost} per day\n\tThis port has ${starports[starport].fuelAvailable} fuel`;
-      const sizdetail = `\t`;
+      const sizdetail = `\t${planetSize[size].diameter} in diameter\n\tGravity is ${planetSize[size].gravity}G`;
       let atdetail = `\t${atmospheres[atmosphere].composition} atmosphere\n\t`;
       if(atmospheres[atmosphere].gearRequired == "None") {
         atdetail += `No special gear is required`;
@@ -64,7 +66,7 @@ discordClient.on('message', async msg => {
       // TODO format this with commas, no decimal
       popdetail += 10**Number(population);
       const govdetail = `\t${governments[goverment]}`;
-      const lawdetail = `\t*Bans*: ${lawLevels[law].weaponsBanned}; ${lawLevels[law].armourBanned}`;
+      const lawdetail = `\t*Bans*:\n\t\t${lawLevels[law].weaponsBanned};\n\t\t${lawLevels[law].armourBanned}`;
       const techdetail = `\tTL ${techLevels[tech].level}\n\t${techLevels[tech].shortDescription}`;
 
       // define response to start with cr to drop off line with name
@@ -74,7 +76,7 @@ discordClient.on('message', async msg => {
       response += `**Atmosphere (${atmosphere})**\n${atdetail} \n`;
       response += `**Hydrosphere (${hydrosphere})**\n${hyddetail}\n`;
       response += `**Population: (${population})**\n${popdetail}\n`;
-      response += `**Government (${goverment})**\n\t${govdetail} \n`;
+      response += `**Government (${goverment})**\n${govdetail} \n`;
       response += `**Law (${law})**\n${lawdetail}  \n`;
       response += `**Tech (${tech})**\n ${techdetail}  \n`;
       await msg.reply(response);
