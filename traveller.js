@@ -57,7 +57,18 @@ discordClient.on('message', async msg => {
       const [starport, size, atmosphere, hydrosphere, population, goverment, law, tech] = uwp;
 
       // define extra details for each item
-      const spdetail = `\tThis port is ${starports[starport].quality}\n\tBerthing costs are ${starports[starport].berthingCost} per day\n\tThis port has ${starports[starport].fuelAvailable} fuel`;
+      let spdetail = `\t`;
+      if(starports[starport].quality == "None") {
+        spdetail += `\tThere is **no starport** on this planet\n`;
+      }else{
+        spdetail += `\tThis port is ${starports[starport].quality}\n`;
+      }
+      spdetail += `Berthing costs are ${starports[starport].berthingCost} per day\n`;
+      if(starports[starport].fuelAvailable == "None") {
+        spdetail += `\tThis port has **No fuel**`;
+      }else{
+        spdetail += `\tThis port has ${starports[starport].fuelAvailable} fuel`;
+      }
       const sizeDetail = `\t${planetSizes[size].diameter} in diameter\n\tGravity is ${planetSizes[size].gravity}G`;
       let atdetail = `\t${atmospheres[atmosphere].composition} atmosphere\n\t`;
       if(atmospheres[atmosphere].gearRequired == "None") {
