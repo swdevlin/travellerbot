@@ -15,4 +15,4 @@ The INVITE_URL is just a place to store the reminder.
 
 ``npm install`` to install all the dependencies. Then
 
-``node bot.js`` to start up the bot.
+``node traveller.js`` to start up the bot.
