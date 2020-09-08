@@ -23,6 +23,9 @@ discordClient.on('message', async msg => {
   if (!msg.content.startsWith(prefix))
     return;
 
+  const fs = require('fs');
+  const starport = JSON.parse(fs.readFileSync('starport.json', 'utf8'));
+
   const message = msg.content.substring(2).trim().toUpperCase();
   const {id: author_id} = msg.author;
   const {guild} = msg.channel;
@@ -34,7 +37,15 @@ discordClient.on('message', async msg => {
       for (const code of uwp)
         if (!codeIsValid(code))
           msg.reply(`${msg.content} is an invalid UWP`);
-      let response = `Starport: ${uwp[0]} \n`;
+  
+      // get the starport details
+      let sp = "";
+      for (i in starport.items) {
+          if(startport.items[i].value == uwp[0])
+            sp = `${startport.items[i].quality} Berthing Costs:${startport.items[i].berthing_cost} Fueld Avaialble:${startport.items[i].fuel_available}`;
+        }
+
+      let response = `Starport: ${uwp[0]} ${sp}\n`;
       response += `Size: ${uwp[1]} \n`;
       response += `Atmosphere: ${uwp[2]} \n`;
       response += `Hydrosphere: ${uwp[3]} \n`;
