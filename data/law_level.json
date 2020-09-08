@@ -1,0 +1,42 @@
+{
+    "0": {
+        "weaponsBanned": "No",
+        "armourBanned": "No"
+    },
+    "1": {
+        "weaponsBanned": "Poison Gas, Explosives, Undetectable Weapons and WMD",
+        "armourBanned": "Battle Dress"
+    },
+    "2": {
+        "weaponsBanned": "Portable energy, Laser, Poison Gas, Explosives, Undetectable Weapons and WMD",
+        "armourBanned": "Combat Armour, Battle Dress"
+    },
+    "3": {
+        "weaponsBanned": "Military, Portable energy, Laser, Poison Gas, Explosives, Undetectable Weapons and WMD",
+        "armourBanned": "Flak, Combat Armour, Battle Dress"
+    },
+    "4": {
+        "weaponsBanned": "Submachine guns, light assault, Military, Portable energy, Laser, Poison Gas, Explosives, Undetectable Weapons and WMD",
+        "armourBanned": "Cloth, Flak, Combat Armour, Battle Dress"
+    },
+    "5": {
+        "weaponsBanned": "Personal Concealable Weapons, Submachine guns, light assault, Military, Portable energy, Laser, Poison Gas, Explosives, Undetectable Weapons and WMD",
+        "armourBanned": "Mesh, Cloth, Flak, Combat Armour, Battle Dress"
+    },
+    "6": {
+        "weaponsBanned": "All Firearms, except shotguns and stunners",
+        "armourBanned": "Cloth, Flak, Combat Armour, Battle Dress"
+    },
+    "7": {
+        "weaponsBanned": "All Firearms, including Shotguns",
+        "armourBanned": "Cloth, Flak, Combat Armour, Battle Dress"
+    },
+    "8": {
+        "weaponsBanned": "All bladed weapons, stunners and all firearms",
+        "armourBanned": "All visible"
+    },
+    "9": {
+        "weaponsBanned": "All Weapons",
+        "armourBanned": "All"
+    }
+}

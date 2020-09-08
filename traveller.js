@@ -18,6 +18,8 @@ const government = JSON.parse(fs.readFileSync('data/government.json', 'utf8'));
 
 const atmosphere = JSON.parse(fs.readFileSync('data/atmosphere.json', 'utf8'));
 
+const lawLevels = JSON.parse(fs.readFileSync('data/law_level.json', 'utf8'));
+
 const codeIsValid = (code) => {
   return (code.length === 1 && '0123456789ABCDEF'.includes(code));
 }
@@ -51,7 +53,7 @@ discordClient.on('message', async msg => {
       response += `Hydrosphere: ${uwp[3]} \n`;
       response += `Population: ${uwp[4]} \n`;
       response += `Government ${uwp[5]}: ${government[uwp[5]]} \n`;
-      response += `Law: ${uwp[6]} \n`;
+      response += `Law ${uwp[6]}: Bans - ${lawLevels[uwp[6]].weaponsBanned}; ${lawLevels[uwp[6]].armourBanned} \n`;
       response += `Tech: ${uwp[7]} \n`;
       console.log(response);
       await msg.reply(response);
