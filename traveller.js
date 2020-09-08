@@ -18,6 +18,8 @@ const governments = JSON.parse(fs.readFileSync('data/government.json', 'utf8'));
 
 const atmospheres = JSON.parse(fs.readFileSync('data/atmosphere.json', 'utf8'));
 
+const hydrospheres = JSON.parse(fs.readFileSync('data/hydrographic.json', 'utf8'));
+
 const lawLevels = JSON.parse(fs.readFileSync('data/law_level.json', 'utf8'));
 
 const techLevels = JSON.parse(fs.readFileSync('data/tech_level.json', 'utf8'));
@@ -48,16 +50,33 @@ discordClient.on('message', async msg => {
           msg.reply(`${msg.content} is an invalid UWP`);
       const [starport, size, atmosphere, hydrosphere, population, goverment, law, tech] = uwp;
 
-      // get the starport details
-      const sp = `\n\t**Quality**: ${starports[starport].quality}\n\t**Berthing Costs**: ${starports[starport].berthingCost}\n\t**Fuel Available**: ${starports[starport].fuelAvailable}`;
-      let response = `Starport ${starport}: ${sp}\n`;
-      response += `Size: ${size} \n`;
-      response += `Atmosphere ${atmosphere}: ${atmospheres[atmosphere].composition} ${atmospheres[atmosphere].gearRequired} \n`;
-      response += `Hydrosphere: ${hydrosphere} \n`;
-      response += `Population: ${population} \n`;
-      response += `Government ${goverment}: ${governments[goverment]} \n`;
-      response += `Law ${law}: Bans - ${lawLevels[law].weaponsBanned}; ${lawLevels[law].armourBanned} \n`;
-      response += `Tech ${tech}: ${techLevels[tech].level}  \n`;
+      // define extra details for each item
+      const spdetail = `\tThis port is ${starports[starport].quality}\n\tBerthing costs are ${starports[starport].berthingCost} per day\n\tThis port has ${starports[starport].fuelAvailable} fuel`;
+      const sizdetail = `\t`;
+      let atdetail = `\t${atmospheres[atmosphere].composition} atmosphere\n\t`;
+      if(atmospheres[atmosphere].gearRequired == "None") {
+        atdetail += `No special gear is required`;
+      }else{
+        atdetail += `This atmosphere requires ${atmospheres[atmosphere].gearRequired}`;
+      }
+      const hyddetail = `\t${hydrospheres[hydrosphere].description}`;
+      let popdetail = `\t`;
+      // TODO format this with commas, no decimal
+      popdetail += 10**Number(population);
+      const govdetail = `\t${governments[goverment]}`;
+      const lawdetail = `\t*Bans*: ${lawLevels[law].weaponsBanned}; ${lawLevels[law].armourBanned}`;
+      const techdetail = `\tTL ${techLevels[tech].level}\n\t${techLevels[tech].shortDescription}`;
+
+      // define response to start with cr to drop off line with name
+      let response = `\n`;
+      response += `**Starport (${starport})**\n${spdetail}\n`;
+      response += `**Size (${size})**\n${sizdetail}\n`;
+      response += `**Atmosphere (${atmosphere})**\n${atdetail} \n`;
+      response += `**Hydrosphere (${hydrosphere})**\n${hyddetail}\n`;
+      response += `**Population: (${population})**\n${popdetail}\n`;
+      response += `**Government (${goverment})**\n\t${govdetail} \n`;
+      response += `**Law (${law})**\n${lawdetail}  \n`;
+      response += `**Tech (${tech})**\n ${techdetail}  \n`;
       await msg.reply(response);
     }
   } catch(err) {
