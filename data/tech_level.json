@@ -1,50 +1,98 @@
 {
     "0": {
-        "level": "0"
+        "level": "0",
+        "shortDescription": "Primitive",
+        "technologyAge": "Stone Age",
+        "details": "No technology. TL 0 species have only discovered the simplest tools and principles, and are on a par with Earth’s Stone Age."
     },
     "1": {
-        "level": "1"
-    },
+        "level": "1",
+        "shortDescription": "Primitive",
+        "technologyAge": "Iron Age",
+        "details": "Roughly on a par with Bronze or Iron age technology. TL 1 science is mostly superstition, but they can manufacture weapons and work metals."
+   },
     "2": {
-        "level": "2"
-    },
+        "level": "2",
+        "shortDescription": "Primitive",
+        "technologyAge": "Renaissance Era",
+        "details": " Renaissance technology. TL 2 brings with it a greater understanding of chemistry, physics, biology and astronomy as well as the scientific method. "
+   },
     "3": {
-        "level": "3"
-    },
+        "level": "3",
+        "shortDescription": "Primitive",
+        "technologyAge": "Steam Age",
+        "details": "The advances of TL 2 are now applied, bringing the germ of industrial revolution and steam power. Primitive firearms now dominate the battlefield. This is roughly comparable to the early 19th century."
+   },
     "4": {
-        "level": "4"
+        "level": "4",
+        "shortDescription": "Industrial",
+        "technologyAge": "Industrial Revolution",
+        "details": "The transition to industrial revolution is complete, bringing plastics, radio and other such inventions. Roughly comparable to the late 19th/early 20th century. "
     },
     "5": {
-        "level": "5"
+        "level": "5",
+        "shortDescription": "Industrial",
+        "technologyAge": "Combustion Age",
+        "details": "TL 5 brings widespread electrification, tele-communications and internal combustion. At the high end of the TL, atomics and primitive computing appear. Roughly on a par with the mid–20th century."
     },
     "6": {
-        "level": "6"
+        "level": "6",
+        "shortDescription": "Industrial",
+        "technologyAge": "Space Age",
+        "details": "TL 6 brings the development of fission power and more advanced computing. Advances in materials technology and rocketry bring about the dawn of the space age."
     },
     "7": {
-        "level": "7"
-    },
+        "level": "7",
+        "shortDescription": "Pre-Stellar",
+        "technologyAge": "Near Planet Orbit",
+        "details": "A pre-stellar society can reach orbit reliably and has telecommunications satellites. Computers become common. At the time of writing, humanity is currently somewhere between TL 7 and TL 8."
+   },
     "8": {
-        "level": "8"
-    },
+        "level": "8",
+        "shortDescription": "Pre-Stellar",
+        "technologyAge": "Space Habitats",
+        "details": "At TL 8, it is possible to reach other worlds in the same system, although terraforming or full colonisation are not within the culture’s capacity. Permanent space habitats become possible. Fusion power becomes commercially viable."
+   },
     "9": {
-        "level": "9"
+        "level": "9",
+        "shortDescription": "Pre-Stellar",
+        "technologyAge": "Gravity Control",
+        "details": "The defining element of TL 9 is the development of gravity manipulation, which makes space travel vastly safer and faster. This research leads to development of the jump drive, which occurs near the end of this Tech Level. TL 9 cultures can colonise other worlds, although travelling to a colony is often a one-way trip."
     },
     "A": {
-        "level": "10"
+        "level": "10",
+        "shortDescription": "Early Stellar",
+        "technologyAge": "Jump Drives",
+        "details": "With the advent of commonly available jump drives, nearby systems are opened up. Orbital habitats and factories become common. Interstellar travel and trade lead to an economic boom. Colonies become much more viable."
     },
     "B": {
-        "level": "11"
+        "level": "11",
+        "shortDescription": "Early Stellar",
+        "technologyAge": "Aartificial Intelligence",
+        "details": "The first true artificial intelligences become possible, as computers are able to model synaptic networks. Grav-supported structures reach to the heavens. Jump 2 travel becomes possible, allowing easier travel beyond the one jump stellar mains."
     },
     "C": {
-        "level": "12"
-    },
+        "level": "12",
+        "shortDescription": "Average Stellar",
+        "technologyAge": "Weather Control",
+        "details": "Weather control revolutionises terraforming and agriculture. Man-portable plasma weapons and carrier-mounted fusion guns make the battlefield untenable for unarmoured combatants. Jump 3 travel is developed. "
+   },
     "D": {
-        "level": "13"
-    },
+        "level": "13",
+        "shortDescription": "Average Stellar",
+        "technologyAge": "Cloning",
+        "details": "The battle dress appears on the battlefield in response to the new weapons. Cloning of body parts becomes easy. Advances in hull design and thruster plates means that spacecraft can easily go underwater. Jump 4 travel."
+   },
     "E": {
-        "level": "14"
+        "level": "14",
+        "shortDescription": "Average Stellar",
+        "technologyAge": "Flying Cities",
+        "details": "Fusion weapons become manportable. Flying cities appear. Jump 5 travel."
     },
     "F": {
-        "level": "15"
+        "level": "15",
+        "shortDescription": "High Stellar",
+        "technologyAge": "Black Globes",
+        "details": "Black globe generators suggest a new direction for defensive technologies, while the development of synthetic anagathics means that the human lifespan is now vastly increased. Jump 6 travel."
     }
 }
