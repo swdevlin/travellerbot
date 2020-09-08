@@ -12,11 +12,11 @@ discordClient.on('ready', () => {
 
 const UWPRegex = /(.)(.)(.)(.)(.)(.)(.)\-(.)/;
 
-const starport = JSON.parse(fs.readFileSync('data/starport.json', 'utf8'));
+const starports = JSON.parse(fs.readFileSync('data/starport.json', 'utf8'));
 
-const government = JSON.parse(fs.readFileSync('data/government.json', 'utf8'));
+const governments = JSON.parse(fs.readFileSync('data/government.json', 'utf8'));
 
-const atmosphere = JSON.parse(fs.readFileSync('data/atmosphere.json', 'utf8'));
+const atmospheres = JSON.parse(fs.readFileSync('data/atmosphere.json', 'utf8'));
 
 const lawLevels = JSON.parse(fs.readFileSync('data/law_level.json', 'utf8'));
 
@@ -46,18 +46,18 @@ discordClient.on('message', async msg => {
       for (const code of uwp)
         if (!codeIsValid(code))
           msg.reply(`${msg.content} is an invalid UWP`);
-  
+      const [starport, size, atmosphere, hydrosphere, population, goverment, law, tech] = uwp;
+
       // get the starport details
-      const sp = `${starport[uwp[0]].quality} Berthing Costs: ${starport[uwp[0]].berthingCost} Fuel Available: ${starport[uwp[0]].fuelAvailable}`;
-      let response = `Starport ${uwp[0]}: ${sp}\n`;
-      response += `Size: ${uwp[1]} \n`;
-      response += `Atmosphere ${uwp[2]}: ${atmosphere[uwp[2]].composition} ${atmosphere[uwp[2]].gearRequired} \n`;
-      response += `Hydrosphere: ${uwp[3]} \n`;
-      response += `Population: ${uwp[4]} \n`;
-      response += `Government ${uwp[5]}: ${government[uwp[5]]} \n`;
-      response += `Law ${uwp[6]}: Bans - ${lawLevels[uwp[6]].weaponsBanned}; ${lawLevels[uwp[6]].armourBanned} \n`;
-      response += `Tech ${uwp[7]}: ${techLevels[uwp[7]].level}  \n`;
-      console.log(response);
+      const sp = `${starports[starport].quality} Berthing Costs: ${starports[starport].berthingCost} Fuel Available: ${starports[starport].fuelAvailable}`;
+      let response = `Starport ${starport}: ${sp}\n`;
+      response += `Size: ${size} \n`;
+      response += `Atmosphere ${atmosphere}: ${atmospheres[atmosphere].composition} ${atmospheres[atmosphere].gearRequired} \n`;
+      response += `Hydrosphere: ${hydrosphere} \n`;
+      response += `Population: ${population} \n`;
+      response += `Government ${goverment}: ${governments[goverment]} \n`;
+      response += `Law ${law}: Bans - ${lawLevels[law].weaponsBanned}; ${lawLevels[law].armourBanned} \n`;
+      response += `Tech ${tech}: ${techLevels[tech].level}  \n`;
       await msg.reply(response);
     }
   } catch(err) {
