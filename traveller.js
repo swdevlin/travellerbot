@@ -48,52 +48,57 @@ discordClient.on('message', async msg => {
   const {guild} = msg.channel;
   const {id: guild_id} = guild;
   try {
-    let uwp = UWPRegex.exec(message);
-    if (uwp) {
-      uwp.shift();
-      for (const code of uwp)
-        if (!codeIsValid(code))
-          msg.reply(`${msg.content} is an invalid UWP`);
-      const [starport, size, atmosphere, hydrosphere, population, goverment, law, tech] = uwp;
+    let msg = exec(messages);
+    if (msg.substring(0,5) == "trade") {
+      let response = `The Trade Code function is not yet operational`;
+    }else{
+      let uwp = UWPRegex.exec(message);
+      if (uwp) {
+        uwp.shift();
+        for (const code of uwp)
+          if (!codeIsValid(code))
+            msg.reply(`${msg.content} is an invalid UWP`);
+        const [starport, size, atmosphere, hydrosphere, population, goverment, law, tech] = uwp;
 
-      // define extra details for each item
-      let spdetail = ``;
-      if(starports[starport].quality == "None") {
-        spdetail += `\tThere is **no starport** on this planet\n`;
-      }else{
-        spdetail += `\tThis port is ${starports[starport].quality}\n`;
-      }
-      spdetail += `\tBerthing costs are ${starports[starport].berthingCost} per day\n`;
-      if(starports[starport].fuelAvailable == "None") {
-        spdetail += `\tThis port has **No fuel**`;
-      }else{
-        spdetail += `\tThis port has ${starports[starport].fuelAvailable} fuel`;
-      }
-      const sizeDetail = `\t${planetSizes[size].diameter} in diameter\n\tGravity is ${planetSizes[size].gravity}G`;
-      let atdetail = `\t${atmospheres[atmosphere].composition} atmosphere\n\t`;
-      if(atmospheres[atmosphere].gearRequired == "None") {
-        atdetail += `No special gear is required`;
-      }else{
-        atdetail += `This atmosphere requires ${atmospheres[atmosphere].gearRequired}`;
-      }
-      const hyddetail = `\t${hydrospheres[hydrosphere].description}`;
-      let popdetail = `\t`;
-      // TODO format this with commas, no decimal
-      popdetail += formatNumber(10**Number(population));
-      const govdetail = `\t${governments[goverment]}`;
-      const lawdetail = `\t*Bans*:\n\t\t${lawLevels[law].weaponsBanned};\n\t\t${lawLevels[law].armourBanned}`;
-      const techdetail = `\tTL ${techLevels[tech].level}\n\t${techLevels[tech].shortDescription}`;
+        // define extra details for each item
+        let spdetail = ``;
+        if(starports[starport].quality == "None") {
+          spdetail += `\tThere is **no starport** on this planet\n`;
+        }else{
+          spdetail += `\tThis port is ${starports[starport].quality}\n`;
+        }
+        spdetail += `\tBerthing costs are ${starports[starport].berthingCost} per day\n`;
+        if(starports[starport].fuelAvailable == "None") {
+          spdetail += `\tThis port has **No fuel**`;
+        }else{
+          spdetail += `\tThis port has ${starports[starport].fuelAvailable} fuel`;
+        }
+        const sizeDetail = `\t${planetSizes[size].diameter} in diameter\n\tGravity is ${planetSizes[size].gravity}G`;
+        let atdetail = `\t${atmospheres[atmosphere].composition} atmosphere\n\t`;
+        if(atmospheres[atmosphere].gearRequired == "None") {
+          atdetail += `No special gear is required`;
+        }else{
+          atdetail += `This atmosphere requires ${atmospheres[atmosphere].gearRequired}`;
+        }
+        const hyddetail = `\t${hydrospheres[hydrosphere].description}`;
+        let popdetail = `\t`;
+        // TODO format this with commas, no decimal
+        popdetail += formatNumber(10**Number(population));
+        const govdetail = `\t${governments[goverment]}`;
+        const lawdetail = `\t*Bans*:\n\t\t${lawLevels[law].weaponsBanned};\n\t\t${lawLevels[law].armourBanned}`;
+        const techdetail = `\tTL ${techLevels[tech].level}\n\t${techLevels[tech].shortDescription}`;
 
-      // define response to start with cr to drop off line with name
-      let response = `\n`;
-      response += `**Starport (${starport})**\n${spdetail}\n`;
-      response += `**Size (${size})**\n${sizeDetail}\n`;
-      response += `**Atmosphere (${atmosphere})**\n${atdetail} \n`;
-      response += `**Hydrosphere (${hydrosphere})**\n${hyddetail}\n`;
-      response += `**Population: (${population})**\n${popdetail}\n`;
-      response += `**Government (${goverment})**\n${govdetail} \n`;
-      response += `**Law (${law})**\n${lawdetail}  \n`;
-      response += `**Tech (${tech})**\n ${techdetail}  \n`;
+        // define response to start with cr to drop off line with name
+        let response = `\n`;
+        response += `**Starport (${starport})**\n${spdetail}\n`;
+        response += `**Size (${size})**\n${sizeDetail}\n`;
+        response += `**Atmosphere (${atmosphere})**\n${atdetail} \n`;
+        response += `**Hydrosphere (${hydrosphere})**\n${hyddetail}\n`;
+        response += `**Population: (${population})**\n${popdetail}\n`;
+        response += `**Government (${goverment})**\n${govdetail} \n`;
+        response += `**Law (${law})**\n${lawdetail}  \n`;
+        response += `**Tech (${tech})**\n ${techdetail}  \n`;
+      }
       await msg.reply(response);
     }
   } catch(err) {
