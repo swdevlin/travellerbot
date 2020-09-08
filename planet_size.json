@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "value": 0,
+            "diameter": "Less than 1,000km",
+            "gravity": "Negligible"
+        },
+        {
+            "value": 1,
+            "diameter": "1,600km",
+            "gravity": 0.05
+        },
+        {
+            "value": 2,
+            "diameter": "3,200km",
+            "gravity": "0.15"
+        }
+       
+    ]
+}
