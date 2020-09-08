@@ -4,7 +4,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const discordClient = new Discord.Client();
 
-const prefix = process.env.COCBOT_PREFIX || 'tb';
+const prefix = process.env.TRBOT_PREFIX || 'tb';
 
 discordClient.on('ready', () => {
   console.log(`Logged in as ${discordClient.user.tag}!`);
