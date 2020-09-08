@@ -48,9 +48,9 @@ discordClient.on('message', async msg => {
   const {guild} = msg.channel;
   const {id: guild_id} = guild;
   try {
-    let msg = exec(messages);
-    if (msg.substring(0,5) == "trade") {
+    if (message.substring(0,5) == "TRADE") {
       let response = `The Trade Code function is not yet operational`;
+      await msg.reply(response);
     }else{
       let uwp = UWPRegex.exec(message);
       if (uwp) {
@@ -98,8 +98,8 @@ discordClient.on('message', async msg => {
         response += `**Government (${goverment})**\n${govdetail} \n`;
         response += `**Law (${law})**\n${lawdetail}  \n`;
         response += `**Tech (${tech})**\n ${techdetail}  \n`;
+        await msg.reply(response);
       }
-      await msg.reply(response);
     }
   } catch(err) {
     console.log(err);
