@@ -4,39 +4,39 @@
             "description": "Agricultural",
             "goods": [
                 {
-                    "goods_name": "Common Raw Materials",
+                    "goodsName": "Common Raw Materials",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Biochemicals",
+                    "goodsName": "Biochemicals",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Live Animals",
+                    "goodsName": "Live Animals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Luxury Consumables",
+                    "goodsName": "Luxury Consumables",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Textiles",
+                    "goodsName": "Textiles",
                     "DM": "+7"
                 },
                 {
-                    "goods_name": "Uncommon Raw Materials",
+                    "goodsName": "Uncommon Raw Materials",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Wood",
+                    "goodsName": "Wood",
                     "DM": "+6"
                 },
                 {
-                    "goods_name": "Luxuries (Illegal)",
+                    "goodsName": "Luxuries (Illegal)",
                     "DM": "+2"
                 }
             ]
@@ -45,35 +45,35 @@
             "description": "Asteroid",
             "goods": [
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+4"
                 },
                 {
-                    "goods_name": "Common Ore",
+                    "goodsName": "Common Ore",
                     "DM": "+4"
                 },
                 {
-                    "goods_name": "Crystals & Gems",
+                    "goodsName": "Crystals & Gems",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Pharmacueticals",
+                    "goodsName": "Pharmacueticals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Precious Metals",
+                    "goodsName": "Precious Metals",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Radioactives",
+                    "goodsName": "Radioactives",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Uncommon Ore",
+                    "goodsName": "Uncommon Ore",
                     "DM": "+4"
                 },
                 {
-                    "goods_name": "Drugs (Illegal)",
+                    "goodsName": "Drugs (Illegal)",
                     "DM": "+1"
                 }
             ]
@@ -86,23 +86,23 @@
             "description": "Desert",
             "goods": [
                 {
-                    "goods_name": "Crystals & Gems",
+                    "goodsName": "Crystals & Gems",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Petrochemicals",
+                    "goodsName": "Petrochemicals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Precious Metals",
+                    "goodsName": "Precious Metals",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Spices",
+                    "goodsName": "Spices",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Drugs (Illegal)",
+                    "goodsName": "Drugs (Illegal)",
                     "DM": "+1"
                 }
             ]
@@ -115,15 +115,15 @@
             "description": "Garden",
             "goods": [
                 {
-                    "goods_name": "Common Raw Materials",
+                    "goodsName": "Common Raw Materials",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Drugs (Illegal)",
+                    "goodsName": "Drugs (Illegal)",
                     "DM": "+1"
                 }
             ]
@@ -132,11 +132,11 @@
             "description": "High Population",
             "goods": [
                 {
-                    "goods_name": "Luxury Goods",
+                    "goodsName": "Luxury Goods",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Pharmacueticals",
+                    "goodsName": "Pharmacueticals",
                     "DM": "+1"
                 }
             ]
@@ -145,43 +145,43 @@
             "description": "High Tech",
             "goods": [
                 {
-                    "goods_name": "Common Electronics",
+                    "goodsName": "Common Electronics",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Advanced Electronics",
+                    "goodsName": "Advanced Electronics",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Advanced Machine Parts",
+                    "goodsName": "Advanced Machine Parts",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Advanced Weapons",
+                    "goodsName": "Advanced Weapons",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Advanced Vehicles",
+                    "goodsName": "Advanced Vehicles",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Cybernetics",
+                    "goodsName": "Cybernetics",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Medical Supplies",
+                    "goodsName": "Medical Supplies",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Vehicles",
+                    "goodsName": "Vehicles",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Cybernetics (Illegal)",
+                    "goodsName": "Cybernetics (Illegal)",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Weapon (Illegal)",
+                    "goodsName": "Weapon (Illegal)",
                     "DM": "+2"
                 }
             ]
@@ -190,11 +190,11 @@
             "description": "Ice Capped",
             "goods": [
                 {
-                    "goods_name": "Crystals & Gems",
+                    "goodsName": "Crystals & Gems",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Precious Metals",
+                    "goodsName": "Precious Metals",
                     "DM": "+2"
                 }
             ]
@@ -203,39 +203,39 @@
             "description": "Industrial",
             "goods": [
                 {
-                    "goods_name": "Common Electronics",
+                    "goodsName": "Common Electronics",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Common Industrial Goods",
+                    "goodsName": "Common Industrial Goods",
                     "DM": "+5"
                 },
                 {
-                    "goods_name": "Common Manufactured Goods",
+                    "goodsName": "Common Manufactured Goods",
                     "DM": "+5"
                 },
                 {
-                    "goods_name": "Advanced Electronics",
+                    "goodsName": "Advanced Electronics",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Advanced Machine Parts",
+                    "goodsName": "Advanced Machine Parts",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Advanced Manufactured Goods",
+                    "goodsName": "Advanced Manufactured Goods",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Polymers",
+                    "goodsName": "Polymers",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Robots",
+                    "goodsName": "Robots",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Vehicles",
+                    "goodsName": "Vehicles",
                     "DM": "+2"
                 }
             ]
@@ -244,7 +244,7 @@
             "description": "Low Population",
             "goods": [
                 {
-                    "goods_name": "Radioactives",
+                    "goodsName": "Radioactives",
                     "DM": "+2"
                 }
             ]
@@ -257,11 +257,11 @@
             "description": "Non-Agricultural",
             "goods": [
                 {
-                    "goods_name": "Common Industrial Goods",
+                    "goodsName": "Common Industrial Goods",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Common Manufactured Goods",
+                    "goodsName": "Common Manufactured Goods",
                     "DM": "+2"
                 }
             ]
@@ -278,7 +278,7 @@
             "description": "Rich",
             "goods": [
                 {
-                    "goods_name": "Common Electronics",
+                    "goodsName": "Common Electronics",
                     "DM": "+1"
                 }
             ]
@@ -291,31 +291,31 @@
             "description": "Water World",
             "goods": [
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Biochemicals",
+                    "goodsName": "Biochemicals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Luxury Consumables",
+                    "goodsName": "Luxury Consumables",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Uncommon Raw Materials",
+                    "goodsName": "Uncommon Raw Materials",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Biochemicals (Illegal)",
+                    "goodsName": "Biochemicals (Illegal)",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Drugs (Illegal)",
+                    "goodsName": "Drugs (Illegal)",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Luxuries (Illegal)",
+                    "goodsName": "Luxuries (Illegal)",
                     "DM": "+1"
                 }
             ]
@@ -334,19 +334,15 @@
             "description": "Agricultural",
             "goods": [
                 {
-                    "goods_name": "Common Industrial Goods",
+                    "goodsName": "Common Industrial Goods",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Petrochemicals",
+                    "goodsName": "Petrochemicals",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Radioactives",
-                    "DM": "-3"
-                },
-                {
-                    "goods_name": "Robots",
+                    "goodsName": "Robots",
                     "DM": "+2"
                 }
             ]
@@ -355,27 +351,27 @@
             "description": "Asteroid",
             "goods": [
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Advanced Electronics",
+                    "goodsName": "Advanced Electronics",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Advanced Machine Parts",
+                    "goodsName": "Advanced Machine Parts",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Advanced Vehicles",
+                    "goodsName": "Advanced Vehicles",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Cybernetics",
+                    "goodsName": "Cybernetics",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Cybernetics (Illegal)",
+                    "goodsName": "Cybernetics (Illegal)",
                     "DM": "+4"
                 }
             ]
@@ -392,7 +388,7 @@
             "description": "Fluid Oceans",
             "goods": [
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+1"
                 }
             ]
@@ -405,39 +401,39 @@
             "description": "High Population",
             "goods": [
                 {
-                    "goods_name": "Common Manufactured Goods",
+                    "goodsName": "Common Manufactured Goods",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Advanced Manufactured Goods",
+                    "goodsName": "Advanced Manufactured Goods",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Luxury Consumables",
+                    "goodsName": "Luxury Consumables",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Spices",
+                    "goodsName": "Spices",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Textiles",
+                    "goodsName": "Textiles",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Vehicles",
+                    "goodsName": "Vehicles",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Drugs (Illegal)",
+                    "goodsName": "Drugs (Illegal)",
                     "DM": "+6"
                 },
                 {
-                    "goods_name": "Luxuries (Illegal)",
+                    "goodsName": "Luxuries (Illegal)",
                     "DM": "+4"
                 }
             ]
@@ -446,19 +442,19 @@
             "description": "High Tech",
             "goods": [
                 {
-                    "goods_name": "Precious Metals",
+                    "goodsName": "Precious Metals",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Radioactives",
+                    "goodsName": "Radioactives",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Robots",
+                    "goodsName": "Robots",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Uncommon Raw Materials",
+                    "goodsName": "Uncommon Raw Materials",
                     "DM": "+1"
                 }
             ]
@@ -467,15 +463,15 @@
             "description": "Ice Capped",
             "goods": [
                 {
-                    "goods_name": "Common Consumables",
+                    "goodsName": "Common Consumables",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Cybernetics",
+                    "goodsName": "Cybernetics",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Cybernetics (Illegal)",
+                    "goodsName": "Cybernetics (Illegal)",
                     "DM": "+4"
                 }
             ]
@@ -484,51 +480,51 @@
             "description": "Industrial",
             "goods": [
                 {
-                    "goods_name": "Radioactives",
+                    "goodsName": "Radioactives",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Common Raw Materials",
+                    "goodsName": "Common Raw Materials",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Common Ore",
+                    "goodsName": "Common Ore",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Biochemicals",
+                    "goodsName": "Biochemicals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Crystals & Gems",
+                    "goodsName": "Crystals & Gems",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Medical Supplies",
+                    "goodsName": "Medical Supplies",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Petrochemicals",
+                    "goodsName": "Petrochemicals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Precious Metals",
+                    "goodsName": "Precious Metals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Uncommon Ore",
+                    "goodsName": "Uncommon Ore",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Uncommon Raw Materials",
+                    "goodsName": "Uncommon Raw Materials",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Wood",
+                    "goodsName": "Wood",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Biochemicals (Illegal)",
+                    "goodsName": "Biochemicals (Illegal)",
                     "DM": "+6"
                 }
             ]
@@ -537,19 +533,19 @@
             "description": "Low Population",
             "goods": [
                 {
-                    "goods_name": "Common Electronics",
+                    "goodsName": "Common Electronics",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Live Animals",
+                    "goodsName": "Live Animals",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Petrochemicals",
+                    "goodsName": "Petrochemicals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Pharmacueticals",
+                    "goodsName": "Pharmacueticals",
                     "DM": "+1"
                 }
             ]
@@ -558,11 +554,11 @@
             "description": "Low Tech",
             "goods": [
                 {
-                    "goods_name": "Petrochemicals",
+                    "goodsName": "Petrochemicals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Pharmacueticals",
+                    "goodsName": "Pharmacueticals",
                     "DM": "+1"
                 }
             ]
@@ -571,7 +567,7 @@
             "description": "Non-Agricultural",
             "goods": [
                 {
-                    "goods_name": "Textiles",
+                    "goodsName": "Textiles",
                     "DM": "+2"
                 }
             ]
@@ -580,43 +576,39 @@
             "description": "Non Industrial",
             "goods": [
                 {
-                    "goods_name": "Common Electronics",
+                    "goodsName": "Common Electronics",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Common Industrial Goods",
+                    "goodsName": "Common Industrial Goods",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Common Manufactured Goods",
+                    "goodsName": "Common Manufactured Goods",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Common Ore",
+                    "goodsName": "Common Ore",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Advanced Electronics",
+                    "goodsName": "Advanced Electronics",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Advanced Machine Parts",
+                    "goodsName": "Advanced Machine Parts",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Polymers",
+                    "goodsName": "Polymers",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Radioactives",
-                    "DM": "-2"
-                },
-                {
-                    "goods_name": "Uncommon Ore",
+                    "goodsName": "Uncommon Ore",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Vehicles",
+                    "goodsName": "Vehicles",
                     "DM": "+2"
                 }
             ]
@@ -625,27 +617,27 @@
             "description": "Poor",
             "goods": [
                 {
-                    "goods_name": "Common Electronics",
+                    "goodsName": "Common Electronics",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Common Raw Materials",
+                    "goodsName": "Common Raw Materials",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Advanced Weapons",
+                    "goodsName": "Advanced Weapons",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Medical Supplies",
+                    "goodsName": "Medical Supplies",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Spices",
+                    "goodsName": "Spices",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Weapon (Illegal)",
+                    "goodsName": "Weapon (Illegal)",
                     "DM": "+6"
                 }
             ]
@@ -654,67 +646,67 @@
             "description": "Rich",
             "goods": [
                 {
-                    "goods_name": "Advanced Electronics",
+                    "goodsName": "Advanced Electronics",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Advanced Manufactured Goods",
+                    "goodsName": "Advanced Manufactured Goods",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Advanced Vehicles",
+                    "goodsName": "Advanced Vehicles",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Crystals & Gems",
+                    "goodsName": "Crystals & Gems",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Cybernetics",
+                    "goodsName": "Cybernetics",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Luxury Consumables",
+                    "goodsName": "Luxury Consumables",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Luxury Goods",
+                    "goodsName": "Luxury Goods",
                     "DM": "+4"
                 },
                 {
-                    "goods_name": "Medical Supplies",
+                    "goodsName": "Medical Supplies",
                     "DM": "+1"
                 },
                 {
-                    "goods_name": "Pharmacueticals",
+                    "goodsName": "Pharmacueticals",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Polymers",
+                    "goodsName": "Polymers",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Precious Metals",
+                    "goodsName": "Precious Metals",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Spices",
+                    "goodsName": "Spices",
                     "DM": "+3"
                 },
                 {
-                    "goods_name": "Wood",
+                    "goodsName": "Wood",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Cybernetics (Illegal)",
+                    "goodsName": "Cybernetics (Illegal)",
                     "DM": "+8"
                 },
                 {
-                    "goods_name": "Drugs (Illegal)",
+                    "goodsName": "Drugs (Illegal)",
                     "DM": "+6"
                 },
                 {
-                    "goods_name": "Luxuries (Illegal)",
+                    "goodsName": "Luxuries (Illegal)",
                     "DM": "+6"
                 }
             ]
@@ -731,15 +723,15 @@
             "description": "Amber Zone",
             "goods": [
                 {
-                    "goods_name": "Advanced Weapons",
+                    "goodsName": "Advanced Weapons",
                     "DM": "+2"
                 },
                 {
-                    "goods_name": "Cybernetics (Illegal)",
+                    "goodsName": "Cybernetics (Illegal)",
                     "DM": "+6"
                 },
                 {
-                    "goods_name": "Weapon (Illegal)",
+                    "goodsName": "Weapon (Illegal)",
                     "DM": "+8"
                 }
             ]
@@ -748,15 +740,15 @@
             "description": "Red Zone",
             "goods": [
                 {
-                    "goods_name": "Advanced Weapons",
+                    "goodsName": "Advanced Weapons",
                     "DM": "+4"
                 },
                 {
-                    "goods_name": "Cybernetics (Illegal)",
+                    "goodsName": "Cybernetics (Illegal)",
                     "DM": "+6"
                 },
                 {
-                    "goods_name": "Weapon (Illegal)",
+                    "goodsName": "Weapon (Illegal)",
                     "DM": "+10"
                 }
             ]
