@@ -3,7 +3,7 @@ A Discord bot for the Traveller RPG
 
 ## Set up
 
-nodejs 12+ is required
+nodejs 12+ is required. npm 6.14+ is required.
 
 Copy the .envtemplate to .env
 

@@ -2,7 +2,7 @@
   "name": "TravellerBot",
   "version": "0.1.0",
   "description": "Discord bot for Traveller games",
-  "main": "index.js",
+  "main": "traveller.js",
   "scripts": {
     "test": "node_modules/.bin/mocha",
     "coverage": "nyc node_modules/.bin/mocha --recursive"
