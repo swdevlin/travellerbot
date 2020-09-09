@@ -122,10 +122,8 @@ describe('TestTrade', function () {
     expect(msg.reply.called).to.be.ok;
     let expected = `\nCodes are AG\n`;
     expected += `\n\t**AG: Agricultural**\n`;
-    expected += `\t*Buy these:*\n`;
     expected += command.purchase('AG');
 
-    expected += `\t*Sell these:*\n`;
     expected += command.sell('AG');
 
     expect(msg.reply.calledWith(expected)).to.be.ok;
