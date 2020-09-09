@@ -1,6 +1,6 @@
 {
   "name": "TravellerBot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Discord bot for Traveller games",
   "main": "traveller.js",
   "scripts": {
