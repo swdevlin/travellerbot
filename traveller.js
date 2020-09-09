@@ -36,6 +36,30 @@ function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 }
 
+function displayTradeCodes (codeList) {
+  let response = `\n`;
+  response += `Codes are ${codeList}\n`;
+  for (index = 0; index < codeList.length; ++index) {
+    response += `\n\t**${codeList[index]}: ${tradeCodes["purchase"][codeList[index]].description}**\n`;
+    
+    response += `\t*Buy these:*\n`;
+    for (var p in tradeCodes["purchase"][codeList[index]].goods) {
+      if( tradeCodes["purchase"][codeList[index]].goods.hasOwnProperty(p) ) {
+        response += `\t\t${tradeCodes["purchase"][codeList[index]].goods[p].goodsName} (DM ${tradeCodes["purchase"][codeList[index]].goods[p].DM})\n`;
+      } 
+    }
+    response += `\t*Sell these:*\n`;
+    for (var p in tradeCodes["sell"][codeList[index]].goods) {
+      if( tradeCodes["sell"][codeList[index]].goods.hasOwnProperty(p) ) {
+        response += `\t\t${tradeCodes["sell"][codeList[index]].goods[p].goodsName} (DM ${tradeCodes["sell"][codeList[index]].goods[p].DM})\n`;
+      } 
+    } 
+ 
+  }
+
+  return response;
+}
+
 discordClient.on('message', async msg => {
   // ignore our own messages
   if (`${msg.author.username}#${msg.author.discriminator}` === discordClient.user.tag)
@@ -51,14 +75,7 @@ discordClient.on('message', async msg => {
   const {id: guild_id} = guild;
   try {
     if (message.startsWith("TRADE")) {
-      tradeCodeList = message.slice(6).split(" ");
-      let response = `\n`;
-      response += `Codes are ${tradeCodeList}\n`;
-      for (index = 0; index < tradeCodeList.length; ++index) {
-        response += `\t${tradeCodeList[index]}: ${tradeCodes["purchase"][tradeCodeList[index]].description}\n`;
-      }
-      response += `The Trade Code function is not yet operational`;
-      await msg.reply(response);
+      await msg.reply(displayTradeCodes(message.slice(6).split(" ")));
     }else{
       let uwp = UWPRegex.exec(message);
       if (uwp) {
