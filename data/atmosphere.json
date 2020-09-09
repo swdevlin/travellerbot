@@ -1,5 +1,5 @@
 {
-    "0": {"composition":"None","gearRequired":"Vacc Suit"},
+    "0": {"composition":"No","gearRequired":"Vacc Suit"},
     "1": {"composition":"Trace","gearRequired":"Vacc Suit"},
     "2": {"composition":"Very Thin, Tainted","gearRequired":"Respirator & Filter"},
     "3": {"composition":"Very Thin","gearRequired":"Respirator"},
