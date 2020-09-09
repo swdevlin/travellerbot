@@ -44,10 +44,8 @@ class Trade extends BaseCommand {
       for (const code of this.codes) {
         response += `\n\t**${code}: ${tradeCodes["purchase"][code].description}**\n`;
 
-        response += `\t*Buy these:*\n`;
         response += this.purchase(code);
 
-        response += `\t*Sell these:*\n`;
         response += this.sell(code);
       }
     } else {
