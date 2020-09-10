@@ -16,8 +16,33 @@ class Trade extends BaseCommand {
   }
 
   generateResponse(type, selectedGoods) {
-    let response = ``;
+    // sort by the name of the item and the dm
+    selectedGoods.sort(
+      function(a, b) {          
+         if (a.name === b.name) {
+            // DM is only important when names are the same
+            return b.DM - a.DM;
+         }
+         return a.name > b.name ? 1 : -1;
+      });
+    // walk array and remove duplicates
+    let index = 0;
+    let prevName = "";
+    let newArray = [];
     for (const good of selectedGoods) {
+      if (good.name != prevName) {
+        newArray.push(good)
+      }
+      index ++;
+      prevName = good.name;
+    }
+    // sort by the DM of the item
+    newArray.sort(function(a, b) {
+      return b.DM - a.DM;
+    });
+
+    let response = ``;
+    for (const good of newArray) {
       if (good.DM < 0) {
         response += `\t\t**DM ${good.DM}** `;
       }else{
@@ -34,12 +59,9 @@ class Trade extends BaseCommand {
     let selectedGoods = [];
     for (const code of this.codes) {
       for (const good of purchase[code].goods) {
-        selectedGoods.push({"DM":good.DM, "name":good.name, "code":code});
+        selectedGoods.push({DM:good.DM, name:good.name, code:code});
       }
     }
-    selectedGoods.sort(function(a, b) {
-      return b.DM - a.DM;
-    });
 
     return this.generateResponse("Buy", selectedGoods);
   }
@@ -48,12 +70,9 @@ class Trade extends BaseCommand {
     let selectedGoods = [];
     for (const code of this.codes) {
       for (const good of sell[code].goods) {
-        selectedGoods.push({"DM":good.DM, "name":good.name, "code":code});
+        selectedGoods.push({DM:good.DM, name:good.name, code:code});
       }
     }
-    selectedGoods.sort(function(a, b) {
-      return b.DM - a.DM;
-    });
 
     return this.generateResponse("Sell", selectedGoods);
   }
@@ -67,21 +86,6 @@ class Trade extends BaseCommand {
       response += `Codes are ${this.codes}\n`;
       response += this.purchase();
       response += this.sell();
-/*       let respList = ``;
-      for (const code of this.codes) {
-        respList += this.purchase(code);
-      }
-      if (respList.length > 0)
-        response += `\t*Buy these:*\n` + respList;
-
-      respList = ``;
-      for (const code of this.codes) {
-        respList += this.sell(code);
-      }
-      if (respList.length > 0)
-        response += `\t*Sell these:*\n` + respList;
- */
-
     } else {
       response = 'No trade codes supplied';
     }
