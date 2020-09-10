@@ -5,39 +5,39 @@
             "goods": [
                 {
                     "name": "Common Raw Materials",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Common Consumables",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Biochemicals",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Live Animals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Luxury Consumables",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Textiles",
-                    "DM": "+7"
+                    "DM": "7"
                 },
                 {
                     "name": "Uncommon Raw Materials",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Wood",
-                    "DM": "+6"
+                    "DM": "6"
                 },
                 {
                     "name": "Luxuries (Illegal)",
-                    "DM": "+2"
+                    "DM": "2"
                 }
             ]
         },
@@ -46,35 +46,35 @@
             "goods": [
                 {
                     "name": "Common Consumables",
-                    "DM": "+4"
+                    "DM": "-4"
                 },
                 {
                     "name": "Common Ore",
-                    "DM": "+4"
+                    "DM": "4"
                 },
                 {
                     "name": "Crystals & Gems",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Pharmacueticals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Precious Metals",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Radioactives",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Uncommon Ore",
-                    "DM": "+4"
+                    "DM": "4"
                 },
                 {
                     "name": "Drugs (Illegal)",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -87,23 +87,23 @@
             "goods": [
                 {
                     "name": "Crystals & Gems",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Petrochemicals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Precious Metals",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Spices",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Drugs (Illegal)",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -116,15 +116,15 @@
             "goods": [
                 {
                     "name": "Common Raw Materials",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Common Consumables",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Drugs (Illegal)",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -133,11 +133,11 @@
             "goods": [
                 {
                     "name": "Luxury Goods",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Pharmacueticals",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -146,43 +146,43 @@
             "goods": [
                 {
                     "name": "Common Electronics",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Advanced Electronics",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Advanced Machine Parts",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Advanced Weapons",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Advanced Vehicles",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Cybernetics",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Medical Supplies",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Vehicles",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Cybernetics (Illegal)",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Weapon (Illegal)",
-                    "DM": "+2"
+                    "DM": "2"
                 }
             ]
         },
@@ -191,11 +191,11 @@
             "goods": [
                 {
                     "name": "Crystals & Gems",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Precious Metals",
-                    "DM": "+2"
+                    "DM": "2"
                 }
             ]
         },
@@ -204,39 +204,39 @@
             "goods": [
                 {
                     "name": "Common Electronics",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Common Industrial Goods",
-                    "DM": "+5"
+                    "DM": "5"
                 },
                 {
                     "name": "Common Manufactured Goods",
-                    "DM": "+5"
+                    "DM": "5"
                 },
                 {
                     "name": "Advanced Electronics",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Advanced Machine Parts",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Advanced Manufactured Goods",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Polymers",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Robots",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Vehicles",
-                    "DM": "+2"
+                    "DM": "2"
                 }
             ]
         },
@@ -245,7 +245,7 @@
             "goods": [
                 {
                     "name": "Radioactives",
-                    "DM": "+2"
+                    "DM": "2"
                 }
             ]
         },
@@ -258,11 +258,11 @@
             "goods": [
                 {
                     "name": "Common Industrial Goods",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Common Manufactured Goods",
-                    "DM": "+2"
+                    "DM": "2"
                 }
             ]
         },
@@ -279,7 +279,7 @@
             "goods": [
                 {
                     "name": "Common Electronics",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -292,31 +292,31 @@
             "goods": [
                 {
                     "name": "Common Consumables",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Biochemicals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Luxury Consumables",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Uncommon Raw Materials",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Biochemicals (Illegal)",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Drugs (Illegal)",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Luxuries (Illegal)",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -335,15 +335,19 @@
             "goods": [
                 {
                     "name": "Common Industrial Goods",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Petrochemicals",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Robots",
-                    "DM": "+2"
+                    "DM": "2"
+                },
+                {
+                    "name": "Radioactives",
+                    "DM": "-3"
                 }
             ]
         },
@@ -352,27 +356,27 @@
             "goods": [
                 {
                     "name": "Common Consumables",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Advanced Electronics",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Advanced Machine Parts",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Advanced Vehicles",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Cybernetics",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Cybernetics (Illegal)",
-                    "DM": "+4"
+                    "DM": "4"
                 }
             ]
         },
@@ -389,7 +393,7 @@
             "goods": [
                 {
                     "name": "Common Consumables",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -402,39 +406,39 @@
             "goods": [
                 {
                     "name": "Common Manufactured Goods",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Common Consumables",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Advanced Manufactured Goods",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Luxury Consumables",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Spices",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Textiles",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Vehicles",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Drugs (Illegal)",
-                    "DM": "+6"
+                    "DM": "6"
                 },
                 {
                     "name": "Luxuries (Illegal)",
-                    "DM": "+4"
+                    "DM": "4"
                 }
             ]
         },
@@ -443,19 +447,19 @@
             "goods": [
                 {
                     "name": "Precious Metals",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Radioactives",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Robots",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Uncommon Raw Materials",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -464,15 +468,15 @@
             "goods": [
                 {
                     "name": "Common Consumables",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Cybernetics",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Cybernetics (Illegal)",
-                    "DM": "+4"
+                    "DM": "4"
                 }
             ]
         },
@@ -481,51 +485,51 @@
             "goods": [
                 {
                     "name": "Radioactives",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Common Raw Materials",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Common Ore",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Biochemicals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Crystals & Gems",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Medical Supplies",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Petrochemicals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Precious Metals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Uncommon Ore",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Uncommon Raw Materials",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Wood",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Biochemicals (Illegal)",
-                    "DM": "+6"
+                    "DM": "6"
                 }
             ]
         },
@@ -534,19 +538,19 @@
             "goods": [
                 {
                     "name": "Common Electronics",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Live Animals",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Petrochemicals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Pharmacueticals",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -555,11 +559,11 @@
             "goods": [
                 {
                     "name": "Petrochemicals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Pharmacueticals",
-                    "DM": "+1"
+                    "DM": "1"
                 }
             ]
         },
@@ -568,7 +572,7 @@
             "goods": [
                 {
                     "name": "Textiles",
-                    "DM": "+2"
+                    "DM": "2"
                 }
             ]
         },
@@ -577,39 +581,43 @@
             "goods": [
                 {
                     "name": "Common Electronics",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Common Industrial Goods",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Common Manufactured Goods",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Common Ore",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Advanced Electronics",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Advanced Machine Parts",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Polymers",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Uncommon Ore",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Vehicles",
-                    "DM": "+2"
+                    "DM": "2"
+                },
+                {
+                    "name": "Radioactives",
+                    "DM": "-2"
                 }
             ]
         },
@@ -618,27 +626,27 @@
             "goods": [
                 {
                     "name": "Common Electronics",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Common Raw Materials",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Advanced Weapons",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Medical Supplies",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Spices",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Weapon (Illegal)",
-                    "DM": "+6"
+                    "DM": "6"
                 }
             ]
         },
@@ -647,67 +655,67 @@
             "goods": [
                 {
                     "name": "Advanced Electronics",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Advanced Manufactured Goods",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Advanced Vehicles",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Crystals & Gems",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Cybernetics",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Luxury Consumables",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Luxury Goods",
-                    "DM": "+4"
+                    "DM": "4"
                 },
                 {
                     "name": "Medical Supplies",
-                    "DM": "+1"
+                    "DM": "1"
                 },
                 {
                     "name": "Pharmacueticals",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Polymers",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Precious Metals",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Spices",
-                    "DM": "+3"
+                    "DM": "3"
                 },
                 {
                     "name": "Wood",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Cybernetics (Illegal)",
-                    "DM": "+8"
+                    "DM": "8"
                 },
                 {
                     "name": "Drugs (Illegal)",
-                    "DM": "+6"
+                    "DM": "6"
                 },
                 {
                     "name": "Luxuries (Illegal)",
-                    "DM": "+6"
+                    "DM": "6"
                 }
             ]
         },
@@ -724,15 +732,15 @@
             "goods": [
                 {
                     "name": "Advanced Weapons",
-                    "DM": "+2"
+                    "DM": "2"
                 },
                 {
                     "name": "Cybernetics (Illegal)",
-                    "DM": "+6"
+                    "DM": "6"
                 },
                 {
                     "name": "Weapon (Illegal)",
-                    "DM": "+8"
+                    "DM": "8"
                 }
             ]
         },
@@ -741,15 +749,15 @@
             "goods": [
                 {
                     "name": "Advanced Weapons",
-                    "DM": "+4"
+                    "DM": "4"
                 },
                 {
                     "name": "Cybernetics (Illegal)",
-                    "DM": "+6"
+                    "DM": "6"
                 },
                 {
                     "name": "Weapon (Illegal)",
-                    "DM": "+10"
+                    "DM": "10"
                 }
             ]
         }

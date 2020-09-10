@@ -15,25 +15,49 @@ class Trade extends BaseCommand {
     this.codes = tokens.map(a => a.toUpperCase());
   }
 
-  purchase(code) {
-    let response = '';
-    for (const good of purchase[code].goods) {
-      response += `\t\t${good.name} (DM ${good.DM})\n`;
+  generateResponse(type, selectedGoods) {
+    let response = ``;
+    for (const good of selectedGoods) {
+      if (good.DM < 0) {
+        response += `\t\t**DM ${good.DM}** `;
+      }else{
+        response += `\t\tDM +${good.DM} `;
+      }
+      response += `${good.name} (${good.code})\n`;
     }
     if (response.length > 0)
-      response = `\t*Buy these:*\n` + response;
+      response = `\t*${type} these:*\n` + response;
     return response;
   }
 
-  sell(code) {
-    let response = '';
-    for (const good of sell[code].goods) {
-      response += `\t\t${good.name} (DM ${good.DM})\n`;
+  purchase() {
+    let selectedGoods = [];
+    for (const code of this.codes) {
+      for (const good of purchase[code].goods) {
+        selectedGoods.push({"DM":good.DM, "name":good.name, "code":code});
+      }
     }
-    if (response.length > 0)
-      response = `\t*Sell these:*\n` + response;
-    return response;
+    selectedGoods.sort(function(a, b) {
+      return b.DM - a.DM;
+    });
+
+    return this.generateResponse("Buy", selectedGoods);
   }
+
+  sell() {
+    let selectedGoods = [];
+    for (const code of this.codes) {
+      for (const good of sell[code].goods) {
+        selectedGoods.push({"DM":good.DM, "name":good.name, "code":code});
+      }
+    }
+    selectedGoods.sort(function(a, b) {
+      return b.DM - a.DM;
+    });
+
+    return this.generateResponse("Sell", selectedGoods);
+  }
+
 
   async do() {
     await super.do();
@@ -41,13 +65,23 @@ class Trade extends BaseCommand {
     if (this.codes.length > 1 || (this.codes.length === 1 && this.codes[0] !== '')) {
       response = `\n`;
       response += `Codes are ${this.codes}\n`;
+      response += this.purchase();
+      response += this.sell();
+/*       let respList = ``;
       for (const code of this.codes) {
-        response += `\n\t**${code}: ${tradeCodes["purchase"][code].description}**\n`;
-
-        response += this.purchase(code);
-
-        response += this.sell(code);
+        respList += this.purchase(code);
       }
+      if (respList.length > 0)
+        response += `\t*Buy these:*\n` + respList;
+
+      respList = ``;
+      for (const code of this.codes) {
+        respList += this.sell(code);
+      }
+      if (respList.length > 0)
+        response += `\t*Sell these:*\n` + respList;
+ */
+
     } else {
       response = 'No trade codes supplied';
     }
