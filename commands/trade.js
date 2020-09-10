@@ -77,17 +77,33 @@ class Trade extends BaseCommand {
     return this.generateResponse("Sell", selectedGoods);
   }
 
+  validateCodes () {
+    let validCodesAre = ["AG","AS","BA","DE","FL","GA","HI","HT","IC","IN","LO","LT","NA","NI","PO","RI","VA","WA","AZ","RZ"];
+    for (const code of this.codes) {
+      if (validCodesAre.includes(code)) {
+        continue;
+      }else{
+        return false;
+      }
+    }
+    return true;
+  }
+
 
   async do() {
     await super.do();
     let response = '';
     if (this.codes.length > 1 || (this.codes.length === 1 && this.codes[0] !== '')) {
-      response = `\n`;
-      response += `Codes are ${this.codes}\n`;
-      response += this.purchase();
-      response += this.sell();
+      if (this.validateCodes()) {
+        response = `\n`;
+        response += `Codes are ${this.codes}\n`;
+        response += this.purchase();
+        response += this.sell();
+      }else{
+        response = `You have invalid trade codes and we cannot process the command\n`
+      }
     } else {
-      response = 'No trade codes supplied';
+      response = 'No trade codes supplied. Syntax is "tb trade" with trade codes separated by spaces\n';
     }
     await this.msg.reply(response);
   }
