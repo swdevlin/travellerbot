@@ -82,7 +82,7 @@ class Trade extends BaseCommand {
     for (const code of this.codes) {
       if (validCodesAre.includes(code)) {
         continue;
-      }else{
+      } else {
         return false;
       }
     }

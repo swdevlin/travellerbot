@@ -131,7 +131,7 @@ class Buy extends BaseCommand {
         response += `The BUY Codes are ${this.buyCodes}\n`;
         response += `The SELL Codes are ${this.sellCodes}\n`;
         response += this.compareGoods(this.cleanGoods(this.purchase()), this.cleanGoods(this.sell()))
-      }else{
+      } else {
         response = `You have invalid trade codes and we cannot process the command\n`
       }
     } else {
