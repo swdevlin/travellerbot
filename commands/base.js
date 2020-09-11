@@ -11,6 +11,10 @@ class BaseCommand {
 
   }
 
+  formatTradeClassification(code) {
+    return code.charAt(0) + code.charAt(1).toLowerCase();
+  }
+
   async do() {
     this.parseMsg();
   }
