@@ -75,7 +75,7 @@ class Buy extends TradeBase {
       }else{
         response += `DM +${good.buyDM} `;
       }
-      response += `(${good.buyCode}) `;
+      response += `(${this.formatTradeClassification(good.buyCode)}) `;
       response += "\n\t\tSell at: ";
       if (good.sellDM < 0) {
         response += `**DM ${good.sellDM}** `;
@@ -122,8 +122,10 @@ class Buy extends TradeBase {
     let response;
     if (this.buyCodes.length > 0 && this.sellCodes.length) {
       if (this.validateCodes()) {
-        response = `\nThe BUY Codes are ${this.buyCodes}\n`;
-        response += `The SELL Codes are ${this.sellCodes}\n`;
+        let codeList = this.buyCodes.map(code => this.formatTradeClassification(code)).join(', ');
+        response = `\nThe BUY Codes are ${codeList}\n`;
+        codeList = this.sellCodes.map(code => this.formatTradeClassification(code)).join(', ');
+        response += `The SELL Codes are ${codeList}\n`;
         response += this.compareGoods(this.cleanGoods(this.purchase()), this.cleanGoods(this.sell()))
       } else {
         response = `You have invalid trade codes and we cannot process the command\n`
