@@ -1,4 +1,3 @@
-const BaseCommand = require("./base");
 const TradeBase = require("./basetrade");
 
 const {purchase, sell} = require("../trade_codes");
