@@ -19,7 +19,9 @@ const getCommandObject = (prefix, msg) => {
     return new UWP(prefix, msg);
   }
 
-  return null;
+  // if the message does not contain a command and is not a UWP then assume it is a system name
+  return new commands["System"](prefix, msg);
+  //return null;
 }
 
 exports.getCommandObject = getCommandObject;
