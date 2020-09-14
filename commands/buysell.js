@@ -1,8 +1,10 @@
-const BaseCommand = require("./base");
+const TradeBase = require("./basetrade");
 
-const {tradeCodes, purchase, sell} = require("../trade_codes");
+const {purchase, sell} = require("../trade_codes");
 
-class Buy extends BaseCommand {
+const BuySellRegex = /BUY\s+(.+)\s+SELL\s+(.+)/;
+
+class Buy extends TradeBase {
   constructor(prefix, msg) {
     super(prefix, msg);
     this.codes = [];
@@ -11,10 +13,15 @@ class Buy extends BaseCommand {
   }
 
   parseMsg() {
-    let tokens = this.commandText.split(' ');
-    // get rid of the trade
-    tokens.shift();
-    this.codes = tokens.map(a => a.toUpperCase());
+    let buySell = BuySellRegex.exec(this.commandText);
+    if (buySell) {
+      buySell.shift(); // get rid of compared text
+      const [bcodes, scodes] = buySell;
+      let tokens = bcodes.trim().split(' ')
+      this.buyCodes = tokens.map(a => a.toUpperCase());
+      tokens = scodes.trim().split(' ')
+      this.sellCodes = tokens.map(a => a.toUpperCase());
+    }
   }
 
   cleanGoods(selectedGoods) {
@@ -50,7 +57,13 @@ class Buy extends BaseCommand {
     for (const buyGood of buyGoods) {
       for (const sellGood of sellGoods) {
           if (buyGood.name == sellGood.name) {
-              matches.push({name:buyGood.name,buyDM:buyGood.DM,buyCode:buyGood.code,sellDM:sellGood.DM,sellCode:sellGood.code});
+              matches.push({
+                name: buyGood.name,
+                buyDM: buyGood.DM,
+                buyCode: buyGood.code,
+                sellDM: sellGood.DM,
+                sellCode: sellGood.code
+              });
           }
       }  
     }
@@ -62,14 +75,14 @@ class Buy extends BaseCommand {
       }else{
         response += `DM +${good.buyDM} `;
       }
-      response += `(${good.buyCode}) `;
+      response += `(${this.formatTradeClassification(good.buyCode)}) `;
       response += "\n\t\tSell at: ";
       if (good.sellDM < 0) {
         response += `**DM ${good.sellDM}** `;
       }else{
         response += `DM +${good.sellDM} `;
       }
-      response += `(${good.sellCode})\n`;    }
+      response += `(${this.formatTradeClassification(good.sellCode)})\n`;    }
     if (response.length > 0) {
       response = `\t*I found the following matches:*\n` + response;
     }else{
@@ -101,41 +114,24 @@ class Buy extends BaseCommand {
   }
 
   validateCodes () {
-    let validCodesAre = ["AG","AS","BA","DE","FL","GA","HI","HT","IC","IN","LO","LT","NA","NI","PO","RI","VA","WA","AZ","RZ"];
-    let storeBuy = true;
-    for (const code of this.codes) {
-      if (code == "SELL") {
-          storeBuy = false;
-          continue;
-      }  
-      if (validCodesAre.includes(code)) {
-        if (storeBuy) {
-            this.buyCodes.push(code);
-        }else{
-            this.sellCodes.push(code);
-        }  
-        continue;
-      }else{
-        return false;
-      }
-    }
-    return true;
+    return this.codesAreValid(this.buyCodes) && this.codesAreValid(this.sellCodes);
   }
-
 
   async do() {
     await super.do();
-    let response = '\n';
-    if (this.codes.length > 1 || (this.codes.length === 1 && this.codes[0] !== '')) {
+    let response;
+    if (this.buyCodes.length > 0 && this.sellCodes.length) {
       if (this.validateCodes()) {
-        response += `The BUY Codes are ${this.buyCodes}\n`;
-        response += `The SELL Codes are ${this.sellCodes}\n`;
+        let codeList = this.buyCodes.map(code => this.formatTradeClassification(code)).join(', ');
+        response = `\nThe BUY Codes are ${codeList}\n`;
+        codeList = this.sellCodes.map(code => this.formatTradeClassification(code)).join(', ');
+        response += `The SELL Codes are ${codeList}\n`;
         response += this.compareGoods(this.cleanGoods(this.purchase()), this.cleanGoods(this.sell()))
-      }else{
+      } else {
         response = `You have invalid trade codes and we cannot process the command\n`
       }
     } else {
-      response = 'No trade codes supplied. Syntax is "tb trade" with trade codes separated by spaces\n';
+      response = 'No trade codes supplied. Syntax is "tb buy {codes} sell {codes}" with trade codes separated by spaces\n';
     }
     await this.msg.reply(response);
   }
