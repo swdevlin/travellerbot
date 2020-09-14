@@ -2,6 +2,35 @@ const BaseCommand = require("./base");
 
 const {tradeCodes, purchase, sell} = require("../trade_codes");
 
+const baseCodes = {
+    "A": {Allegience: "Imperial", Type: "Naval and Scout Bases"},
+    "B": {Allegience: "Imperial", Type: "Naval Base and Way Station"},
+    "C": {Allegience: "Vargr", Type: "Corsair Base"},
+    "D": {Allegience: "Imperial", Type: "Depot"},
+    "E": {Allegience: "Hiver", Type: "Embassy Center"},
+    "F": {Allegience: "", Type: "Military and Naval Base"},
+    "G": {Allegience: "Vargr", Type: "Naval Base"},
+    "H": {Allegience: "Vargr", Type: "Naval and Corsair Base"},
+    "I": {Allegience: "", Type: "Naval Base"},
+    "J": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "K": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "L": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "M": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "N": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "O": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "P": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "Q": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "R": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "S": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "T": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "U": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "V": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "W": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "X": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "Y": {Allegience: "Imperial", Type: "Naval and Scout"},
+    "Z": {Allegience: "Imperial", Type: "Naval and Scout"}
+}
+
 class System extends BaseCommand {
   constructor(prefix, msg) {
     super(prefix, msg);
@@ -46,13 +75,22 @@ class System extends BaseCommand {
 
       const moreDetails = {"Worlds":[{"Name":"Nurara","Hex":"2906","UWP":"C5A5422-A","PBG":"604","Zone":"","Bases":"S","Allegiance":"ImDd","Stellar":"M0 V","SS":"D","Ix":"{ 0 }","CalculatedImportance":0,"Ex":"(A33-4)","Cx":"[1416]","Nobility":"B","Worlds":9,"ResourceUnits":-360,"Subsector":3,"Quadrant":1,"WorldX":-68,"WorldY":-74,"Remarks":"Fl Ni","LegacyBaseCode":"S","Sector":"Deneb","SubsectorName":"Million","SectorAbbreviation":"Dene","AllegianceName":"Third Imperium, Domain of Deneb"}]};
       const world = moreDetails.Worlds[0];
-      if (world.Zone == "") {
-          response += "This world in not an Amber or Red Zone world\n";
+      if (world.Zone == "A") {
+          response += "This world is an **Amber** zone\n";
       }else{
-          response += `This world has a zone of ${world.Zone}\n`;
+          if (world.Zone == "R") {
+            response += `This world is a **RED** zone\n`;
+        }else {
+            response += "This world in **not** an Amber or Red Zone world\n";
+        }
       }
-      response += `It has the followng bases: ${world.Bases}\n`;
-      response += `It has the trade codes of ${world.Remarks}\n`;
+      if( world.PBG.slice(world.PBG.length - 1) == "0") {
+        response += "There is **no** Gas Giant suitable for refueling in this system\n";
+      }else{
+          response += "There is at least one **Gas Giant** suitable for refueling in this system\n";
+      }
+      response += `It has the followng bases: ${baseCodes[world.Bases].Allegience} ${baseCodes[world.Bases].Type}\n`;
+      response += `It has the trade codes of **${world.Remarks}**\n`;
       return response;
   }
 
