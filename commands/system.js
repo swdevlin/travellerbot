@@ -117,7 +117,7 @@ class System extends BaseCommand {
     }
 
     response += `This world owes allegiance to the ${world.AllegianceName}\n`;
-    if (Array.isArray(world.Bases)) {
+    if (world.Bases.length > 0) {
       response += `It has the following bases:\n`;
       for (const base of world.Bases) {
         response += `\t${baseCodes[base].type}\n`;
