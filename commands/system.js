@@ -98,7 +98,7 @@ class System extends BaseCommand {
     }
     const world = worldResponse.data.Worlds[0];
 
-    let response = `The ${world.Name} system is located in ${world.Sector} ${hex}\n`;
+    let response = `\nThe **${world.Name}** system is located in ${world.Sector} ${hex}\n`;
     response += `It has a UWP of ${world.UWP}\n`;
     response += `There are ${world.Worlds} planets orbiting the ${world.Stellar} star\n`;
 
@@ -128,7 +128,7 @@ class System extends BaseCommand {
 
     //parse remarks - this field is overloaded with items and needs to be unpacked. No I'm not bitter, why do you ask?
     const tradeCodes = this.parseRemarks(world.Remarks);
-    response += `It has the trade codes of **${tradeCodes}**\n`;
+    response += `Other system information (trade codes and pop splits) **${world.Remarks}**\n`;
 
     await this.msg.reply(response);
   }
