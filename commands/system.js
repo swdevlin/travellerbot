@@ -135,8 +135,8 @@ class System extends BaseCommand {
     }
 
     //parse remarks - this field is overloaded with items and needs to be unpacked. No I'm not bitter, why do you ask?
-    const tradeCodes = this.parseRemarks(world.Remarks);
-    response += `Other system information (trade codes and pop splits) **${world.Remarks}**\n`;
+    const tradeCodes = this.parseRemarks(this.world.Remarks);
+    response += `Other system information (trade codes and pop splits) **${this.world.Remarks}**\n`;
 
     await this.msg.reply(response);
   }
